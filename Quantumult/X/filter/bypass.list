@@ -122,3 +122,5 @@ DOMAIN-SUFFIX,cao86789.cn,REJECT
 DOMAIN-SUFFIX,admaster.com.cn,REJECT
 DOMAIN-SUFFIX,hotmail.com,DIRECT
 DOMAIN,log.snssdk.com,REJECT
+DOMAIN,zhihu-web-analytics.zhihu.com,REJECT
+DOMAIN,crash2.zhihu.com,REJECT
