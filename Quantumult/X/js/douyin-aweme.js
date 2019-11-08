@@ -28,7 +28,7 @@ if (obj.aweme_list) {
     obj.aweme_list[i].status.reviewed = 1;
     obj.aweme_list[i].video_control = arr;
   }
-  $done({body: JSON.stringify(obj)});
+  $done({JSON.stringify(obj)});
 } else if (obj.data) {
   for (var i = obj.data.length - 1; i >= 0; i--) {
     if (obj.data[i].aweme) {
@@ -44,7 +44,7 @@ if (obj.aweme_list) {
       obj.data.splice(i, 1);
     }
   }
-  $done({body: JSON.stringify(obj)});
+  $done({JSON.stringify(obj)});
 } else {
   $done({body});
 }
