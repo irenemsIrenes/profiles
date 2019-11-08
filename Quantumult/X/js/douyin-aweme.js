@@ -4,7 +4,7 @@ if (obj.aweme_list) {
     if (obj.aweme_list[i].raw_ad_data ||
           obj.aweme_list[i].is_ads == true) {
       obj.aweme_list.splice(i, 1);
-      console.log("removed ads");
+      $notify("douyin", "ads", "remvoved");
     }
   }
 }
