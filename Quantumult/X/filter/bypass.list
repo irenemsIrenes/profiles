@@ -126,3 +126,4 @@ DOMAIN,zhihu-web-analytics.zhihu.com,REJECT
 DOMAIN,crash2.zhihu.com,REJECT
 #DOMAIN,log-hl.snssdk.com,REJECT
 DOMAIN-SUFFIX,bsgslb.cn,reject
+DOMAIN-SUFFIX,bvnyt.xyz,reject
