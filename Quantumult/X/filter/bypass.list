@@ -121,9 +121,12 @@ DOMAIN-SUFFIX,zcaod.com,REJECT
 DOMAIN-SUFFIX,cao86789.cn,REJECT
 DOMAIN-SUFFIX,admaster.com.cn,REJECT
 DOMAIN-SUFFIX,hotmail.com,DIRECT
-#DOMAIN,log.snssdk.com,REJECT
 DOMAIN,zhihu-web-analytics.zhihu.com,REJECT
 DOMAIN,crash2.zhihu.com,REJECT
-#DOMAIN,log-hl.snssdk.com,REJECT
-DOMAIN-SUFFIX,bsgslb.cn,reject
-DOMAIN-SUFFIX,bvnyt.xyz,reject
+DOMAIN-SUFFIX,bsgslb.cn,REJECT
+DOMAIN-SUFFIX,bvnyt.xyz,REJECT
+DOMAIN-SUFFIX,cpro.baidustatic.com,REJECT
+DOMAIN-SUFFIX,zhanzhang.baidu.com,REJECT
+DOMAIN-SUFFIX,612.com,REJECT
+DOMAIN-SUFFIX,dup.baidustatic.com,REJECT
+
