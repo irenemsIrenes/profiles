@@ -129,4 +129,7 @@ DOMAIN-SUFFIX,cpro.baidustatic.com,REJECT
 DOMAIN-SUFFIX,zhanzhang.baidu.com,REJECT
 DOMAIN-SUFFIX,612.com,REJECT
 DOMAIN-SUFFIX,dup.baidustatic.com,REJECT
+DOMAIN-SUFFIX,ojgoy.cn,REJECT
+DOMAIN-SUFFIX,jnhyrq.cn,REJECT
+
 
