@@ -2,6 +2,8 @@
  * @supported 00D3992C8F27
  */
 
+$notify("douyin", "ads", "not remvoved");
+
 var obj = JSON.parse($response.body);
 if (obj.aweme_list) {
   for (var i = obj.aweme_list.length - 1; i >= 0; i--) {
