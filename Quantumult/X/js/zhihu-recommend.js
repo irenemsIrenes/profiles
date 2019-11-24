@@ -2,6 +2,7 @@
  * @supported 00D3992C8F27
  */
 
+$notify("zhihu", "ads", "remvoved");
 
 let body = $response.body
 body=JSON.parse(body)
