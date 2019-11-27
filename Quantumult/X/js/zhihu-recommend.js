@@ -14,9 +14,7 @@ body['data'].forEach((element, index)=> {
     }
 })
 
-if (removed) {
-    $notify("zhihu", "ads", "remvoved " + cnt);
-}
+$notify("zhihu", "ads", "remvoved " + cnt);
 
 body=JSON.stringify(body)
 $done(body)
