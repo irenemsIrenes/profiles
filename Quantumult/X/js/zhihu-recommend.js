@@ -4,16 +4,18 @@
 
 let body = $response.body
 body = JSON.parse(body)
-let cnt = 0
-body['data'].forEach((element, index)=> {
+let cnt = 0;
 
-    if(element['id'].startsWith('AD_') || element['card_type'] == 'slot_event_card' ) {      
-       body['data'].splice(index,1)
+for (let i = body.data.length - 1; i >= 0; --i) {
+    let e = body.data[i];
+    if(e['id'].startsWith('AD_') || e['card_type'] == 'slot_event_card' ) {      
+       body.data.splice(index,1)
        ++cnt
     }
-})
+}
 
-$notify("zhihu", "ads", "remvoved " + cnt);
+let m = "remvoved " + cnt;
+$notify("zhihu", "ads 2", m);
 
 body=JSON.stringify(body)
 $done(body)
