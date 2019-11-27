@@ -9,7 +9,7 @@ let cnt = 0;
 for (let i = body.data.length - 1; i >= 0; --i) {
     let e = body.data[i];
     if(e['id'].startsWith('AD_') || e['card_type'] == 'slot_event_card' ) {      
-       body.data.splice(index,1)
+       body.data.splice(i,1)
        ++cnt
     }
 }
