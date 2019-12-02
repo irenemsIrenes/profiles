@@ -16,7 +16,7 @@ for (let i = body.data.length - 1; i >= 0; --i) {
        let elements = e.common_card.feed_content.source_line.elements
        for (let k = 0; k < elements.length; ++k) {
            let ee = elements[i]
-           if (ee.text && ee.text.panel_text.indexOf('盐选推荐') >= 0) {
+           if (ee.text && ee.text.panel_text && ee.text.panel_text.indexOf('盐选推荐') >= 0) {
                body.data.splice(i,1)
                ++cnt
            }
