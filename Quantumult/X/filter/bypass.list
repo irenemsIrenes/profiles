@@ -143,3 +143,5 @@ DOMAIN-SUFFIX,6x53p.cn,REJECT
 DOMAIN-SUFFIX,r528e.cn,REJECT
 DOMAIN-SUFFIX,abtest-ch.snssdk.com,REJECT
 DOMAIN-SUFFIX,smr-aliva.byteoversea.com, REJECT
+DOMAIN-SUFFIX,hdboping.com, REJECT
+DOMAIN-SUFFIX,spyzlsxcj.com, REJECT
