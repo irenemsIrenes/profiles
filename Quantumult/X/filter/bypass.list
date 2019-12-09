@@ -145,3 +145,5 @@ DOMAIN-SUFFIX,abtest-ch.snssdk.com,REJECT
 DOMAIN-SUFFIX,smr-aliva.byteoversea.com, REJECT
 DOMAIN-SUFFIX,hdboping.com, REJECT
 DOMAIN-SUFFIX,spyzlsxcj.com, REJECT
+DOMAIN-SUFFIX,mftgyh.xyz,REJECT
+DOMAIN-SUFFIX,jejre.cn,REJECT
