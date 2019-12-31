@@ -155,6 +155,6 @@ DOMAIN-SUFFIX,sdfp-va.byteoversea.com,REJECT
 DOMAIN-SUFFIX,adashx.m.taobao.com,REJECT
 DOMAIN-SUFFIX,dre8.com,REJECT
 DOMAIN-SUFFIX,adsmind.gdtimg.com,REJECT
-
-
-
+DOMAIN-SUFFIX,adextra.51wnl-cq.com,REJECT
+DOMAIN-SUFFIX,log.51wnl-cq.com,REJECT
+DOMAIN-SUFFIX,ad.51wnl-cq.com,REJECT
