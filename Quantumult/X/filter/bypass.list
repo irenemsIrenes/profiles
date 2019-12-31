@@ -159,3 +159,4 @@ DOMAIN-SUFFIX,adextra.51wnl-cq.com,REJECT
 DOMAIN-SUFFIX,log.51wnl-cq.com,REJECT
 DOMAIN-SUFFIX,ad.51wnl-cq.com,REJECT
 DOMAIN-SUFFIX,bds.snssdk.com,REJECT
+DOMAIN-SUFFIX,mi.gdt.qq.com,REJECT
