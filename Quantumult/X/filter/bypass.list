@@ -161,3 +161,4 @@ DOMAIN-SUFFIX,ad.51wnl-cq.com,REJECT
 DOMAIN-SUFFIX,bds.snssdk.com,REJECT
 DOMAIN-SUFFIX,mi.gdt.qq.com,REJECT
 DOMAIN-SUFFIX,cpu-openapi.baidu.com,REJECT
+DOMAIN-SUFFIX,go2yd.com,REJECT
