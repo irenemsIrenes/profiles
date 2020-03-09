@@ -24,8 +24,8 @@ for (let i = body.data.length - 1; i >= 0; --i) {
     }
 }
 
-let m = "remvoved " + cnt;
-$notify("zhihu", "ads 2", m);
+//let m = "remvoved " + cnt;
+//$notify("zhihu", "ads 2", m);
 
 body=JSON.stringify(body)
 $done(body)
