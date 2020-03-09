@@ -9,7 +9,7 @@ if (obj.data && obj.data.cards) {
       let card = obj.data.cards[i];
       if (card.uve && card.uve.type == "ad") {
           obj.data.cards.splice(i, 1);
-          $notify("weibo", "ads", "remvoved");
+          //$notify("weibo", "ads", "remvoved");
       }
   }
 }
