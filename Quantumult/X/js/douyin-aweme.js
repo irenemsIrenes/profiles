@@ -2,7 +2,7 @@
  * @supported 00D3992C8F27 8B87B7345981
  */
 
-$notify("douyin", "ads", "not remvoved");
+//$notify("douyin", "ads", "not remvoved");
 
 var obj = JSON.parse($response.body);
 if (obj.aweme_list) {
