@@ -13,6 +13,6 @@ let cnt = 0
           ++cnt;
       }
   }
-  $notify("people news", "ads", "remvoved " + cnt);
+  //$notify("people news", "ads", "remvoved " + cnt);
 }
 $done(JSON.stringify(obj));
