@@ -3,6 +3,7 @@
  */
 const userPattern = /.*(娱乐|肖战).*/;
 const textPattern = /.*(肖战).*/;
+const verifiedPattern = /.*(娱乐).*/;
 
 
 var obj = JSON.parse($response.body);
@@ -12,7 +13,7 @@ if (obj.data && obj.data.cards) {
       if (card.uve && card.uve.type == "ad") {
           obj.data.cards.splice(i, 1);
       } else if(card.mblog) {
-        if(card.mblog.user && userPattern.test(card.mblog.user.screen_name)) {
+        if(card.mblog.user && ( verifiedPattern.test(card.mblog.user.verified_reason) || userPattern.test(card.mblog.user.screen_name))) {
            obj.data.cards.splice(i, 1);
         } else if (textPattern.test(card.mblog.text)) {
           obj.data.cards.splice(i, 1);
