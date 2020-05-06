@@ -3,7 +3,7 @@
  */
 const userPattern = /.*(娱乐|肖战).*/;
 const textPattern = /.*(肖战).*/;
-const verifiedPattern = /.*(娱乐|综艺|电视团|剧评人).*/;
+const verifiedPattern = /.*(娱乐|综艺|电视团|剧评人|电视剧).*/;
 
 
 var obj = JSON.parse($response.body);
