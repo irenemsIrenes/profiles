@@ -17,7 +17,7 @@ if (obj.data && obj.data.cards) {
         if (card.mblog.is_vote == 1) {
           obj.data.cards.splice(i, 1);
         }
-        eles if(card.mblog.user && ( verifiedPattern.test(card.mblog.user.verified_reason) || userPattern.test(card.mblog.user.screen_name)
+        else if(card.mblog.user && ( verifiedPattern.test(card.mblog.user.verified_reason) || userPattern.test(card.mblog.user.screen_name)
                               )) {
            obj.data.cards.splice(i, 1);
         } else if (textPattern.test(card.mblog.text) || fromPattern.test(card.mblog.source)) {
