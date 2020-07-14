@@ -170,3 +170,4 @@ DOMAIN-SUFFIX,alogus.umeng.com,REJECT
 DOMAIN-SUFFIX,log.ireaderm.net,REJECT
 DOMAIN-SUFFIX,ft.com,PROXY
 DOMAIN-SUFFIX,ixiaochengxu.cc,REJECT
+DOMAIN-KEYWORD,cordcloud,PROXY
