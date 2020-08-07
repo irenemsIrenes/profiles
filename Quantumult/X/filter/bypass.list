@@ -179,3 +179,4 @@ DOMAIN-SUFFIX,awin1.com,REJECT
 DOMAIN-SUFFIX,aiwawa520.com,REJECT
 DOMAIN-SUFFIX,shence.hupu.com,REJECT
 DOMAIN-SUFFIX, testflight.apple.com,PROXY
+DOMAIN,log.sina.cn,REJECT
