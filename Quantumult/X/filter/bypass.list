@@ -182,3 +182,7 @@ DOMAIN-SUFFIX, testflight.apple.com,PROXY
 DOMAIN,log.sina.cn,REJECT
 DOMAIN,stat.peopleapp.com,REJECT
 DOMAIN-SUFFIX,umsns.com,REJECT
+DOMAIN,hydra.alibaba.com,REJECT
+DOMAIN-SUFFIX,qianxin.com,REJECT
+DOMAIN,dot.xinhuazhiyun.com,REJECT
+DOMAIN,dongjian.hz.netease.com,REJECT
