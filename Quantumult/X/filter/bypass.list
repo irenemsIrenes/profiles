@@ -186,3 +186,4 @@ DOMAIN,hydra.alibaba.com,REJECT
 DOMAIN-SUFFIX,qianxin.com,REJECT
 DOMAIN,dot.xinhuazhiyun.com,REJECT
 DOMAIN,dongjian.hz.netease.com,REJECT
+DOMAIN,collect.hupu.com,REJECT
