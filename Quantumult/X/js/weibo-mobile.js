@@ -3,7 +3,7 @@
  */
 const userPattern = /.*(娱乐|肖战|圈内|整形).*/;
 const textPattern = /.*(肖战).*/;
-const verifiedPattern = /.*(娱乐|综艺|知名(情感|运动)博主|电视团|剧评人|电视剧|超话|职业投资|营养师|美妆).*/;
+const verifiedPattern = /.*(娱乐|综艺|知名(情感|运动|体育)博主|电视团|剧评人|电视剧|超话|职业投资|营养师|美妆).*/;
 const fromPattern = /.*(超话).*/;
 
 
