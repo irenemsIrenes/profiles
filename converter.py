@@ -13,7 +13,7 @@ class Converter:
 	def file_hash(self, file: str) -> str:
 		with open(file, encoding='utf-8') as fp:
 			hasher = hashlib.sha1(fp.read().encode('utf-8'))
-			return hasher.digest()
+			return hasher.hexdigest()
 
 	def convert(self):
 		print(f"current hash: {self.tgt_hash}")
@@ -33,7 +33,7 @@ class Converter:
 		print(f"new hash: {new_hash}")
 		if new_hash != self.tgt_hash:
 			print("update")
-			repo = self.gh.get_repo("profiles")
+			repo = self.gh.get_repo("renemsIrenes/profiles")
 			old_file = repo.get_contents(self.tgt)
 			with open(self.tgt, encoding='utf-8') as fp:
 				repo.update_file(self.tgt, "update bypass.yaml", fp.read(), old_file.sha)
