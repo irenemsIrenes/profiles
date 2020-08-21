@@ -33,7 +33,7 @@ class Converter:
 		print(f"new hash: {new_hash}")
 		if new_hash != self.tgt_hash:
 			print("update")
-			repo = self.gh.get_repo("renemsIrenes/profiles")
+			repo = self.gh.get_repo("irenemsIrenes/profiles")
 			old_file = repo.get_contents(self.tgt)
 			with open(self.tgt, encoding='utf-8') as fp:
 				repo.update_file(self.tgt, "update bypass.yaml", fp.read(), old_file.sha)
