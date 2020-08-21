@@ -161,17 +161,17 @@ rules:
 - DOMAIN-SUFFIX,youkutv.cc,DIRECT
 - DOMAIN-SUFFIX,alogus.umeng.com,REJECT
 - DOMAIN-SUFFIX,log.ireaderm.net,REJECT
-- DOMAIN-SUFFIX,ft.com,PROXY
+- DOMAIN-SUFFIX,ft.com,Proxy
 - DOMAIN-SUFFIX,ixiaochengxu.cc,REJECT
-- DOMAIN-KEYWORD,cordcloud,PROXY
-- DOMAIN-SUFFIX,segment.io,PROXY
-- DOMAIN-SUFFIX,litix.io,PROXY
-- DOMAIN-SUFFIX,pluralsight.com,PROXY
+- DOMAIN-KEYWORD,cordcloud,Proxy
+- DOMAIN-SUFFIX,segment.io,Proxy
+- DOMAIN-SUFFIX,litix.io,Proxy
+- DOMAIN-SUFFIX,pluralsight.com,Proxy
 - DOMAIN-SUFFIX,zenaps.com,REJECT
 - DOMAIN-SUFFIX,awin1.com,REJECT
 - DOMAIN-SUFFIX,aiwawa520.com,REJECT
 - DOMAIN-SUFFIX,shence.hupu.com,REJECT
-- DOMAIN-SUFFIX, testflight.apple.com,PROXY
+- DOMAIN-SUFFIX, testflight.apple.com,Proxy
 - DOMAIN,log.sina.cn,REJECT
 - DOMAIN,stat.peopleapp.com,REJECT
 - DOMAIN-SUFFIX,umsns.com,REJECT
