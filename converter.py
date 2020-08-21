@@ -5,7 +5,7 @@ from github import Github
 
 class Converter:
 	def __init__(self):
-		self.gh = Github(os.envion["GH_TOKEN"])
+		self.gh = Github(os.environ["GH_TOKEN"])
 		self.src = "Quantumult/X/filter/bypass.list"
 		self.tgt = "Quantumult/X/filter/bypass.yaml"
 		self.tgt_hash = self.file_hash(self.tgt)
@@ -41,5 +41,8 @@ class Converter:
 
 
 if __name__ == '__main__':
+	if not os.environ.get("GH_TOKEN"):
+		print("Not valid")
+		exit(0)
 	c = Converter()
 	c.convert()
