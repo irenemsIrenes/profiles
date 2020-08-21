@@ -12,7 +12,7 @@ class Converter:
 
 	def file_hash(self, file: str) -> str:
 		with open(file, encoding='utf-8') as fp:
-			hasher = hashlib.sha1(fp.read())
+			hasher = hashlib.sha1(fp.read().encode('utf-8'))
 			return hasher.digest()
 
 	def convert(self):
