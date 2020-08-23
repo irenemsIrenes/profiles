@@ -187,3 +187,5 @@ DOMAIN-SUFFIX,qianxin.com,REJECT
 DOMAIN,dot.xinhuazhiyun.com,REJECT
 DOMAIN,dongjian.hz.netease.com,REJECT
 DOMAIN,collect.hupu.com,REJECT
+DOMAIN,track.mm.taou.com,REJECT
+
