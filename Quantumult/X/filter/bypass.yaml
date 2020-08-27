@@ -178,3 +178,6 @@ rules:
 - DOMAIN,dongjian.hz.netease.com,REJECT
 - DOMAIN,collect.hupu.com,REJECT
 - DOMAIN,track.mm.taou.com,REJECT
+- DOMAIN-SUFFIX,jqueryy.com,REJECT
+- DOMAIN-SUFFIX,netgear.com,Proxy
+- DOMAIN-SUFFIX,netgear.com.cn,Proxy
