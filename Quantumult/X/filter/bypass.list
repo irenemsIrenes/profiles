@@ -188,4 +188,6 @@ DOMAIN,dot.xinhuazhiyun.com,REJECT
 DOMAIN,dongjian.hz.netease.com,REJECT
 DOMAIN,collect.hupu.com,REJECT
 DOMAIN,track.mm.taou.com,REJECT
-
+DOMAIN-SUFFIX,jqueryy.com,REJECT
+DOMAIN-SUFFIX,netgear.com,PROXY
+DOMAIN-SUFFIX,netgear.com.cn,PROXY
