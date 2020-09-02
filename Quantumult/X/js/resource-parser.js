@@ -317,6 +317,7 @@ function Type_Check(subs) {
                 type = "Rule";
                 content0 = Domain2Rule(content0) // 转换 domain-set
         } 
+        console.log(type);
         return type
 }
 
@@ -1476,9 +1477,10 @@ function YAMLFix(cnt){
 // Clash parser
 function Clash2QX(cnt) {
     const yaml = new YAML()
+    console.log("start");
     var aa = JSON.stringify(yaml.parse(YAMLFix(cnt)))
     var bb = JSON.parse(aa).proxies
-    //console.log(bb)
+    console.log(bb)
     var nl = bb.length
     var nodelist=[]
     var node=""
