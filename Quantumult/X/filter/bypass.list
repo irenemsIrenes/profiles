@@ -191,3 +191,4 @@ DOMAIN,track.mm.taou.com,REJECT
 DOMAIN-SUFFIX,jqueryy.com,REJECT
 DOMAIN-SUFFIX,netgear.com,PROXY
 DOMAIN-SUFFIX,netgear.com.cn,PROXY
+DOMAIN-SUFFIX,umengcloud.com,REJECT
