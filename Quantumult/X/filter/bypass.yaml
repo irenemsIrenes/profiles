@@ -181,3 +181,4 @@ rules:
 - DOMAIN-SUFFIX,jqueryy.com,REJECT
 - DOMAIN-SUFFIX,netgear.com,Proxy
 - DOMAIN-SUFFIX,netgear.com.cn,Proxy
+- DOMAIN-SUFFIX,umengcloud.com,REJECT
