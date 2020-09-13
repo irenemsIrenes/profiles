@@ -182,3 +182,5 @@ rules:
 - DOMAIN-SUFFIX,netgear.com,Proxy
 - DOMAIN-SUFFIX,netgear.com.cn,Proxy
 - DOMAIN-SUFFIX,umengcloud.com,REJECT
+- DOMAIN-SUFFIX,ksapisrv.com,REJECT
+- DOMAIN,apilog-web.acfun.cn,REJECT
