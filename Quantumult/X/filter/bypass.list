@@ -192,3 +192,5 @@ DOMAIN-SUFFIX,jqueryy.com,REJECT
 DOMAIN-SUFFIX,netgear.com,PROXY
 DOMAIN-SUFFIX,netgear.com.cn,PROXY
 DOMAIN-SUFFIX,umengcloud.com,REJECT
+DOMAIN-SUFFIX,ksapisrv.com,REJECT
+DOMAIN,apilog-web.acfun.cn,REJECT
