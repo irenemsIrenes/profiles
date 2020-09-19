@@ -185,3 +185,4 @@ rules:
 - DOMAIN-SUFFIX,ksapisrv.com,REJECT
 - DOMAIN,apilog-web.acfun.cn,REJECT
 - DOMAIN-SUFFIX,amemv.com,DIRECT
+- DOMAIN-SUFFIX,adhubbj.xyz,REJECT
