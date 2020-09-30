@@ -186,3 +186,5 @@ rules:
 - DOMAIN,apilog-web.acfun.cn,REJECT
 - DOMAIN-SUFFIX,amemv.com,DIRECT
 - DOMAIN-SUFFIX,adhubbj.xyz,REJECT
+- DOMAIN-SUFFIX,tyjryuk.cn, REJECT
+- DOMAIN-SUFFIX,hhhtxh.cn, REJECT
