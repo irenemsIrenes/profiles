@@ -27,6 +27,11 @@ const path16 = "/page";
 const path17 = "/statuses/friends_timeline";
 const path18 = "/!/photos/pic_recommend_status";
 
+const userPattern = /.*(娱乐|肖战|圈内|整形|星叭克).*/;
+const textPattern = /.*(肖战).*/;
+const verifiedPattern = /.*(娱乐|综艺|知名情感博主|电视团|剧评人|电视剧|超话|职业投资|营养师|美妆|时尚|运动|体育|健身|好物发现).*/;
+const fromPattern = /.*(超话).*/;
+
 const url = $request.url;
 var body = $response.body;
 
@@ -125,8 +130,13 @@ function filter_timeline_statuses(statuses) {
         let i = statuses.length;
         while (i--) {
             let element = statuses[i];
-            if (is_timeline_likerecommend(element.title)) statuses.splice(i, 1);
-            if (is_timeline_ad(element)) statuses.splice(i, 1);
+            if (is_timeline_likerecommend(element.title)) {
+            	statuses.splice(i, 1);
+            } else if (is_timeline_ad(element)) {
+            	statuses.splice(i, 1);
+            } else if (is_block_content(element)) {
+            	statuses.splice(i, 1);
+            }
         }
     }
     return statuses;
@@ -186,6 +196,25 @@ function is_timeline_ad(mblog) {
 
 function is_timeline_likerecommend(title) {
     return title && title.type && title.type == "likerecommend" ? true : false;
+}
+
+function is_block_content(mblog) {
+	if (mblog.is_vote == 1) {
+		return true;
+	}
+	
+	let user = mblog.user;
+	if (user && (verifiedPattern.test(user.verified_reason) || userPattern.test(user.screen_name) || userPattern.test(user.name))) {
+		return true;
+	}
+	if (fromPattern.test(mblog.source)) {
+		return true;
+	}
+	if (textPattern.test(mblog.text)) {
+		return true;
+	}
+
+	return false;
 }
 
 // by yichahucha
