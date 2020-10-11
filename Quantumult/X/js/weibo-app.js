@@ -128,6 +128,7 @@ $done({ body });
 function filter_timeline_statuses(statuses) {
     if (statuses && statuses.length > 0) {
         let i = statuses.length;
+        let j = i;
         while (i--) {
             let element = statuses[i];
             if (is_timeline_likerecommend(element.title)) {
@@ -138,6 +139,7 @@ function filter_timeline_statuses(statuses) {
             	statuses.splice(i, 1);
             }
         }
+        console.log(`removed ${j - i}`);
     }
     return statuses;
 }
