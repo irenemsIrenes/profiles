@@ -215,6 +215,20 @@ function is_block_content(mblog) {
 	if (textPattern.test(mblog.text)) {
 		return true;
 	}
+	let titleSource = mblog.title_source;
+	if (titleSource && titleSource.name && fromPattern.test(titleSource.name)) {
+	    return true;
+	}
+	
+	let screen_name_suffix_new = mblog.screen_name_suffix_new;
+	if (screen_name_suffix_new) {
+		for (let i = 0; i < screen_name_suffix_new.length; ++i) {
+			let sns = screen_name_suffix_new[i]
+			if (sns && sns.content && fromPattern.test(sns.content)) {
+				return true
+			}
+		}
+	}
 
 	return false;
 }
