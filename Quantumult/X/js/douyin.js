@@ -10,16 +10,16 @@ const nicknamePattern = /电视|电影|電影|剪辑|影视|剪刀|侃剧|明星
 const customVerify = /娱乐|自媒体/
 
 try {
-  if ($response.body.indexOf('剪映') != -1) {
-    console.log($response.body)
-  }
-
   let url = $request.url
   if (path1.test(url)) {
     feed();
   } else if (path2.test(url)) {
     post();
   } else if (path3.test(url)) {
+    if ($response.body.indexOf('剪映') != -1) {
+      console.log($response.body)
+    }
+
     follow();
   } else if (path4.test(url)) {
     nearby();
