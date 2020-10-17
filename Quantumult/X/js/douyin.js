@@ -1,41 +1,44 @@
-const path1 = "/v1/feed/"; // 推荐
-const path2 = "/v1/aweme/post/"; //作品
-const path3 = "/v1/follow/feed/"; // 关注
-const path4 = "/v1/nearby/feed/"; // 同城
-const path5 = "/v1/search/item/"; // 视频
-const path6 = "/v1/general/search/"; // 综合
-const path7 = "/v1/hot/search/video/"; // 热搜
+const path1 = /\/v\d+\/feed\//; // 推荐
+const path2 = /\/v\d+\/aweme\/post\//; //作品
+const path3 = /\/v\d+\/follow\/feed\//; // 关注
+const path4 = /\/v\d+\/nearby\/feed\//; // 同城
+const path5 = /\/v\d+\/search\/item\//; // 视频
+const path6 = /\/v\d+\/general\/search\//; // 综合
+const path7 = /\/v\d+\/hot\/search\/video\//; // 热搜
+
+const nicknamePattern = /电视|电影|剪辑/
+const customVerify = /娱乐/
 
 try {
-  console.log($request.url)
-  console.log($response.body)
-  if ($request.url.indexOf(path1) != -1) {
+  let url = $request.url
+  if (path1.test(url)) {
     feed();
-  } else if ($request.url.indexOf(path2) != -1) {
+  } else if (path2.test(url)) {
     post();
-  } else if ($request.url.indexOf(path3) != -1) {
+  } else if (path3.test(url)) {
     follow();
-  } else if ($request.url.indexOf(path4) != -1) {
+  } else if (path4.test(url)) {
     nearby();
-  } else if ($request.url.indexOf(path5) != -1) {
+  } else if (path5.test(url)) {
     item();
-  } else if ($request.url.indexOf(path6) != -1) {
+  } else if (path6.test(url)) {
     search();
-  } else if ($request.url.indexOf(path7) != -1) {
+  } else if (path7.test(url)) {
     hot();
   } else {
     $done({});
   }
-} catch {
-  $done({});
+} catch (e) {
+  console.log(`douyin.js: ${e.message}`)
+  $done($response.body);
 }
 
 function feed() {
-  console.log($response.body);
   let obj = JSON.parse($response.body);
   let arr = obj.aweme_list;
+  let total = arr.length
   for (var i = arr.length - 1; i >= 0; i--) {
-    if (arr[i].is_ads != false) {
+    if (arr[i].is_ads != false || is_block_content(arr[i])) {
       arr.splice(i, 1);
     }
     let play = arr[i].video.play_addr.url_list;
@@ -47,7 +50,25 @@ function feed() {
     arr[i].author.room_id = 0;
     arr[i].video.misc_download_addrs = {};
   }
+  console.log(`feed: removed ${total - arr.length}`)
   $done({ body: JSON.stringify(obj) });
+}
+
+function is_block_content(aweme) {
+  let author = aweme.author
+  if (!author) {
+    return false
+  }
+
+  if (author.nickname && nicknamePattern.test(author.nickname)) {
+    return true
+  }
+
+  if (author.custom_verify && customVerify.test(author.custom_verify)) {
+    return true
+  }
+
+  return false
 }
 
 function post() {
