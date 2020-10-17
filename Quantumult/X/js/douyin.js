@@ -8,7 +8,7 @@ const path7 = "/v1/hot/search/video/"; // 热搜
 
 try {
   console.log($request.url)
-  console.log($request.body)
+  console.log($reponse.body)
   if ($request.url.indexOf(path1) != -1) {
     feed();
   } else if ($request.url.indexOf(path2) != -1) {
