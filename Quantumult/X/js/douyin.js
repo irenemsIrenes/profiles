@@ -29,6 +29,7 @@ try {
 }
 
 function feed() {
+  console.log($response.body);
   let obj = JSON.parse($response.body);
   let arr = obj.aweme_list;
   for (var i = arr.length - 1; i >= 0; i--) {
