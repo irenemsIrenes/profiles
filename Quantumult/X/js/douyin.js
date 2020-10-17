@@ -7,6 +7,8 @@ const path6 = "/v1/general/search/"; // 综合
 const path7 = "/v1/hot/search/video/"; // 热搜
 
 try {
+  console.log($request.url)
+  console.log($request.body)
   if ($request.url.indexOf(path1) != -1) {
     feed();
   } else if ($request.url.indexOf(path2) != -1) {
