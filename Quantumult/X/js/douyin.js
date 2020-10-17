@@ -16,10 +16,6 @@ try {
   } else if (path2.test(url)) {
     post();
   } else if (path3.test(url)) {
-    if ($response.body.indexOf('剪映') != -1) {
-      console.log($response.body)
-    }
-
     follow();
   } else if (path4.test(url)) {
     nearby();
@@ -56,6 +52,7 @@ function feed() {
     arr[i].status.reviewed = 1;
     arr[i].video_control.allow_download = true;
     arr[i].author.room_id = 0;
+    arr[i].anchors = null;
   }
   console.log(`feed: removed ${total - arr.length}`)
   $done({ body: JSON.stringify(obj) });
@@ -100,10 +97,14 @@ function follow() {
   for (var i = arr.length - 1; i >= 0; i--) {
     arr[i].aweme.status.reviewed = 1;
     arr[i].aweme.video_control.allow_download = true;
-    let play = arr[i].aweme.video.play_addr.url_list;
-    arr[i].aweme.video.download_addr.url_list = play;
-    let download = arr[i].aweme.video.download_addr;
-    arr[i].aweme.video.download_suffix_logo_addr = download;
+    if (arr[i].aweme.video) {
+      let play = arr[i].aweme.video.play_addr.url_list;
+      arr[i].aweme.video.download_addr.url_list = play;
+      let download = arr[i].aweme.video.download_addr;
+      arr[i].aweme.video.download_suffix_logo_addr = download;
+    }
+    arr[i].aweme.anchor_info = {}
+    arr[i].aweme.commerce_info = {}
   }
   $done({ body: JSON.stringify(obj) });
 }
