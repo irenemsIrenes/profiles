@@ -6,10 +6,14 @@ const path5 = /\/v\d+\/search\/item\//; // 视频
 const path6 = /\/v\d+\/general\/search\//; // 综合
 const path7 = /\/v\d+\/hot\/search\/video\//; // 热搜
 
-const nicknamePattern = /电视|电影|電影|剪辑|影视|剪刀|侃剧|明星|追剧|撩剧|撩大片|手游|综艺|剪影|商贸|配音|娱乐|PM|追星|编程/
+const nicknamePattern = /电视|电影|電影|剪辑|影视|剪刀|侃剧|明星|追剧|撩剧|撩大片|手游|综艺|剪影|商贸|配音|娱乐|PM|追星|编程|整形/
 const customVerify = /娱乐|自媒体/
 
 try {
+  if ($response.body.indexOf('剪映') != -1) {
+    console.log($response.body)
+  }
+
   let url = $request.url
   if (path1.test(url)) {
     feed();
@@ -41,14 +45,17 @@ function feed() {
     if (arr[i].is_ads != false || is_block_content(arr[i])) {
       arr.splice(i, 1);
     }
-    let play = arr[i].video.play_addr.url_list;
-    arr[i].video.download_addr.url_list = play;
-    let download = arr[i].video.download_addr;
-    arr[i].video.download_suffix_logo_addr = download;
+    if (arr[i].video) {
+      let play = arr[i].video.play_addr.url_list;
+      arr[i].video.download_addr.url_list = play;
+      let download = arr[i].video.download_addr;
+      arr[i].video.download_suffix_logo_addr = download;
+      arr[i].video.misc_download_addrs = {};
+    }
+
     arr[i].status.reviewed = 1;
     arr[i].video_control.allow_download = true;
     arr[i].author.room_id = 0;
-    arr[i].video.misc_download_addrs = {};
   }
   console.log(`feed: removed ${total - arr.length}`)
   $done({ body: JSON.stringify(obj) });
