@@ -29,30 +29,35 @@ try {
     $done({});
   }
 } catch (e) {
-  console.log(`douyin.js: ${e.message}`)
+  console.log(`douyin.js: ${e.message}, ${e.stack}`)
   $done($response.body);
 }
 
+function log_body_if_match() {
+  if ($response.body.indexOf('剪映') != -1) {
+    console.log(body)
+  }
+}
+
 function feed() {
+  log_body_if_match()
   let obj = JSON.parse($response.body);
   let arr = obj.aweme_list;
   let total = arr.length
   for (var i = arr.length - 1; i >= 0; i--) {
     if (arr[i].is_ads != false || is_block_content(arr[i])) {
       arr.splice(i, 1);
-    }
-    if (arr[i].video) {
+    } else {
       let play = arr[i].video.play_addr.url_list;
       arr[i].video.download_addr.url_list = play;
       let download = arr[i].video.download_addr;
       arr[i].video.download_suffix_logo_addr = download;
       arr[i].video.misc_download_addrs = {};
+      arr[i].status.reviewed = 1;
+      arr[i].video_control.allow_download = true;
+      arr[i].author.room_id = 0;
+      arr[i].anchors = null;
     }
-
-    arr[i].status.reviewed = 1;
-    arr[i].video_control.allow_download = true;
-    arr[i].author.room_id = 0;
-    arr[i].anchors = null;
   }
   console.log(`feed: removed ${total - arr.length}`)
   $done({ body: JSON.stringify(obj) });
@@ -97,12 +102,10 @@ function follow() {
   for (var i = arr.length - 1; i >= 0; i--) {
     arr[i].aweme.status.reviewed = 1;
     arr[i].aweme.video_control.allow_download = true;
-    if (arr[i].aweme.video) {
-      let play = arr[i].aweme.video.play_addr.url_list;
-      arr[i].aweme.video.download_addr.url_list = play;
-      let download = arr[i].aweme.video.download_addr;
-      arr[i].aweme.video.download_suffix_logo_addr = download;
-    }
+    let play = arr[i].aweme.video.play_addr.url_list;
+    arr[i].aweme.video.download_addr.url_list = play;
+    let download = arr[i].aweme.video.download_addr;
+    arr[i].aweme.video.download_suffix_logo_addr = download;
     arr[i].aweme.anchor_info = {}
     arr[i].aweme.commerce_info = {}
   }
