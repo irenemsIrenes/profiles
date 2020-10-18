@@ -35,7 +35,7 @@ try {
 
 function log_body_if_match() {
   if ($response.body.indexOf('剪映') != -1) {
-    console.log(body)
+    console.log($response.body)
   }
 }
 
