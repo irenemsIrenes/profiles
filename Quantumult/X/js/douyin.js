@@ -6,7 +6,7 @@ const path5 = /\/v\d+\/search\/item\//; // 视频
 const path6 = /\/v\d+\/general\/search\//; // 综合
 const path7 = /\/v\d+\/hot\/search\/video\//; // 热搜
 
-const nicknamePattern = /电视|电影|電影|剪辑|影视|剪刀|侃剧|明星|追剧|撩剧|撩大片|手游|综艺|剪影|商贸|配音|娱乐|PM|追星|编程|说大片|整形/
+const nicknamePattern = /电视|电影|電影|剪辑|影视|剪刀|侃剧|明星|看剧|追剧|撩剧|撩大片|手游|综艺|剪影|商贸|配音|娱乐|PM|追星|编程|说大片|整形/
 const customVerify = /娱乐|自媒体/
 
 try {
