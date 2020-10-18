@@ -5,8 +5,9 @@ const path4 = /\/v\d+\/nearby\/feed\//; // 同城
 const path5 = /\/v\d+\/search\/item\//; // 视频
 const path6 = /\/v\d+\/general\/search\//; // 综合
 const path7 = /\/v\d+\/hot\/search\/video\//; // 热搜
+const path8 = /\/v\d+\/familiar\/feed\//; //朋友
 
-const nicknamePattern = /电视|电影|電影|剪辑|影视|剪刀|侃剧|明星|看剧|追剧|撩剧|撩大片|手游|综艺|剪影|商贸|配音|娱乐|PM|追星|编程|说大片|整形/
+const nicknamePattern = /电视|电影|電影|剪辑|影视|剪刀|侃剧|明星|看剧|追剧|撩剧|撩大片|手游|综艺|剪影|商贸|配音|娱乐|PM|追星|编程|说大片|整形|观影|渣剪/
 const customVerify = /娱乐|自媒体/
 
 try {
@@ -25,6 +26,8 @@ try {
     search();
   } else if (path7.test(url)) {
     hot();
+  } else if (path8.test(url)) {
+    friends()
   } else {
     $done({});
   }
@@ -40,7 +43,6 @@ function log_body_if_match() {
 }
 
 function feed() {
-  log_body_if_match()
   let obj = JSON.parse($response.body);
   let arr = obj.aweme_list;
   let total = arr.length
@@ -57,6 +59,9 @@ function feed() {
       arr[i].video_control.allow_download = true;
       arr[i].author.room_id = 0;
       arr[i].anchors = null;
+      if (arr[i].anchor_info) {
+        arr[i].anchor_info = {}
+      }
     }
   }
   console.log(`feed: removed ${total - arr.length}`)
@@ -199,4 +204,9 @@ function hot() {
     }
   }
   $done({ body: JSON.stringify(obj) });
+}
+
+function friends() {
+  console.log($response.body)
+  $done($response.body);
 }
