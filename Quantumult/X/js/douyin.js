@@ -64,7 +64,7 @@ function feed() {
       }
     }
   }
-  console.log(`feed: removed ${total - arr.length}`)
+  console.log(`recommend feed: removed ${total - arr.length}`)
   $done({ body: JSON.stringify(obj) });
 }
 
@@ -207,6 +207,5 @@ function hot() {
 }
 
 function friends() {
-  console.log($response.body)
-  $done($response.body);
+  follow()
 }
