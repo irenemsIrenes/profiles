@@ -9,6 +9,7 @@ const path8 = /\/v\d+\/familiar\/feed\//; //朋友
 
 const nicknamePattern = /电视|电影|電影|剪辑|剪剧|影视|剧社|剪刀|影剪|侃剧|明星|看剧|追剧|撩剧|撩大片|手游|综艺|剪影|商贸|配音|娱乐|PM|追星|影院|编程|说大片|整形|观影|渣剪|网红|说剧|贸易/
 const customVerify = /娱乐|自媒体|贸易|明星/
+const descPattern = /剧场/
 
 try {
   let url = $request.url
@@ -79,6 +80,10 @@ function is_block_content(aweme) {
   }
 
   if (author.custom_verify && customVerify.test(author.custom_verify)) {
+    return true
+  }
+  
+  if (aweme.desc && descPattern.test(aweme.desc)) {
     return true
   }
 
