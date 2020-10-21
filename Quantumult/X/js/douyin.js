@@ -78,6 +78,10 @@ function is_block_content(aweme) {
   if (author.nickname && nicknamePattern.test(author.nickname)) {
     return true
   }
+  
+  if (author.signature && nicknamePattern.test(author.signature)) {
+    return true
+  }
 
   if (author.custom_verify && customVerify.test(author.custom_verify)) {
     return true
