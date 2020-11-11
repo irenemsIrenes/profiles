@@ -200,3 +200,4 @@ DOMAIN-SUFFIX,tyjryuk.cn, REJECT
 DOMAIN-SUFFIX,hhhtxh.cn, REJECT 
 DOMAIN-SUFFIX,log.mmstat.com,REJECT
 DOMAIN-SUFFIX,collect.ux.21cn.com,REJECT
+DOMAIN-SUFFIX,byteimg.com,DIRECT
