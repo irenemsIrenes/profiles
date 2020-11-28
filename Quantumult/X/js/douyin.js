@@ -13,7 +13,7 @@ try {
   $done({ body: JSON.stringify(obj) });
 } catch (e) {
   console.log(`douyin.js: ${e.message}, ${e.stack}`)
-  $done($response.body;
+  $done($response.body);
 }
 
 function is_block_content(aweme) {
