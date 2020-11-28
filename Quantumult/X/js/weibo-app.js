@@ -139,7 +139,7 @@ function filter_timeline_statuses(statuses) {
             	statuses.splice(i, 1);
             }
         }
-        console.log(`removed ${j - i}`);
+        console.log(`weibo removed ${j - i}`);
     }
     return statuses;
 }
