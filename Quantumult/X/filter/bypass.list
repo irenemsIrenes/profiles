@@ -203,3 +203,4 @@ DOMAIN-SUFFIX,collect.ux.21cn.com,REJECT
 DOMAIN-SUFFIX,byteimg.com,DIRECT
 DOMAIN-SUFFIX,ditiezu.net,REJECT
 DOMAIN-SUFFIX,analytics.163.com,REJECT
+DOMAIN-SUFFIC,sensorsdatavip.com,REJECT
