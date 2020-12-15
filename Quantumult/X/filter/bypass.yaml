@@ -194,3 +194,4 @@ rules:
 - DOMAIN-SUFFIX,ditiezu.net,REJECT
 - DOMAIN-SUFFIX,analytics.163.com,REJECT
 - DOMAIN-SUFFIX,sensorsdatavip.com,REJECT
+- DOMAIN-SUFFIX,zhaojunlucky.top,Proxy
