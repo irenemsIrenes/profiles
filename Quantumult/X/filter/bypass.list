@@ -206,4 +206,4 @@ DOMAIN-SUFFIX,analytics.163.com,REJECT
 DOMAIN-SUFFIX,sensorsdatavip.com,REJECT
 DOMAIN-SUFFIX,zhaojunlucky.top,PROXY
 DOMAIN-SUFFIX,manmanbuy.com,DIRECT
-DOMAIN-SUFFIX,qulishi.com,DIRECT
+DOMAIN-SUFFIX,m.qulishi.com,DIRECT
