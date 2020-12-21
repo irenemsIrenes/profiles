@@ -196,3 +196,4 @@ rules:
 - DOMAIN-SUFFIX,sensorsdatavip.com,REJECT
 - DOMAIN-SUFFIX,zhaojunlucky.top,Proxy
 - DOMAIN-SUFFIX,manmanbuy.com,DIRECT
+- DOMAIN-SUFFIX,m.qulishi.com,DIRECT
