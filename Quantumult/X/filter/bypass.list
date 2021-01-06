@@ -207,3 +207,4 @@ DOMAIN-SUFFIX,sensorsdatavip.com,REJECT
 DOMAIN-SUFFIX,zhaojunlucky.top,PROXY
 DOMAIN-SUFFIX,manmanbuy.com,DIRECT
 DOMAIN-SUFFIX,m.qulishi.com,DIRECT
+DOMAIN-SUFFIX,mob.com,REJECT
