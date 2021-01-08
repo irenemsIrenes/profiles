@@ -18,7 +18,7 @@ def update_file_2_gh(file: str, pre_hash: str, gh_token: str) -> None:
         repo = gh.get_repo("irenemsIrenes/profiles")
         old_file = repo.get_contents(file)
         with open(file, encoding='utf-8') as fp:
-            repo.update_file(file, "update bypass.yaml", fp.read(), old_file.sha)
+            repo.update_file(file, f"update {file}", fp.read(), old_file.sha)
             print("DONE")
 
 
