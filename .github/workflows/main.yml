@@ -30,4 +30,4 @@ jobs:
           python-version: '3.9' # Version range or exact version of a Python version to use, using SemVer's version range syntax
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: python py/domian_2_ip.py
+      - run: pip install requests && python py/domian_2_ip.py
