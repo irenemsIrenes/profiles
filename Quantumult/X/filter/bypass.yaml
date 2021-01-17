@@ -199,3 +199,4 @@ rules:
 - DOMAIN-SUFFIX,m.qulishi.com,DIRECT
 - DOMAIN-SUFFIX,mob.com,REJECT
 - DOMAIN-SUFFIX,zxwcbj.com,REJECT
+- DOMAIN-SUFFIX,wwads.cn,REJECT
