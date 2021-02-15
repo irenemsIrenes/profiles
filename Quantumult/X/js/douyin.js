@@ -23,18 +23,22 @@ function is_block_content(aweme) {
   }
 
   if (author.nickname && nicknamePattern.test(author.nickname)) {
+    console.log(`Nickname: ${author.nickname}`)
     return true
   }
   
   if (author.signature && nicknamePattern.test(author.signature)) {
+    console.log(`Signature: ${author.signature}`)
     return true
   }
 
   if (author.custom_verify && customVerify.test(author.custom_verify)) {
+    console.log(`Custom verify: ${author.custom_verify}`)
     return true
   }
   
   if (aweme.desc && descPattern.test(aweme.desc)) {
+    console.log(`Desc: ${aweme.desc}`)
     return true
   }
 
