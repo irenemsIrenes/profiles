@@ -38,7 +38,7 @@ def convert(src: str = SRC_FILE, tgt: str = TGT_FILE):
         for domain in domains:
             ips = query(domain)["v4"]
             fp.write(f"# {domain}\n")
-            for ip in ips:
+            for ip in sorted(ips):
                 fp.write(f"IP-CIDR,{ip}/32,REJECT\n")
     common_github.update_file_2_gh(tgt, pre_hash, os.environ['GH_TOKEN'])
 
