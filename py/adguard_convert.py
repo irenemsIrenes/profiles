@@ -37,7 +37,7 @@ class AdguardConverter:
 				elif rule_type in ['domain-suffix', 'host-suffix']:
 					line = f'||{domain}^'
 				elif rule_type in ['domain-keyword', 'host-keyword']:
-					line = f'/domain/'
+					line = f'/{domain}/'
 				else:
 					continue
 
