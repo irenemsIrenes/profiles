@@ -42,6 +42,7 @@ class AdguardConverter:
 					continue
 
 				tgt_fp.write(line)
+				tgt_fp.write('\n')
 		new_hash = self.file_hash(self.tgt)
 		print(f"new hash: {new_hash}")
 		if new_hash != self.tgt_hash:
