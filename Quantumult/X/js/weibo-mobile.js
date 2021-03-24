@@ -9,22 +9,26 @@ const userDescPattern = /娱乐|电影/
 
 
 var obj = JSON.parse($response.body);
-if (obj.data && obj.data.cards) {
-  for (var i = obj.data.cards.length - 1; i >= 0; i--) {
-      let card = obj.data.cards[i];
-      if (card.uve && card.uve.type == "ad") {
-          obj.data.cards.splice(i, 1);
-      } else if(card.mblog) {
-        if (card.mblog.is_vote == 1) {
-          obj.data.cards.splice(i, 1);
-        }
-        else if(card.mblog.user && ( verifiedPattern.test(card.mblog.user.verified_reason) || userPattern.test(card.mblog.user.screen_name)
-                              || userDescPattern.test(card.mblog.user.description)) {
-           obj.data.cards.splice(i, 1);
-        } else if (textPattern.test(card.mblog.text) || fromPattern.test(card.mblog.source)) {
-          obj.data.cards.splice(i, 1);
-        }
-     }
+try {
+  if (obj.data && obj.data.cards) {
+    for (var i = obj.data.cards.length - 1; i >= 0; i--) {
+        let card = obj.data.cards[i];
+        if (card.uve && card.uve.type == "ad") {
+            obj.data.cards.splice(i, 1);
+        } else if(card.mblog) {
+          if (card.mblog.is_vote == 1) {
+            obj.data.cards.splice(i, 1);
+          }
+          else if(card.mblog.user && ( verifiedPattern.test(card.mblog.user.verified_reason) || userPattern.test(card.mblog.user.screen_name)
+                                || userDescPattern.test(card.mblog.user.description))) {
+             obj.data.cards.splice(i, 1);
+          } else if (textPattern.test(card.mblog.text) || fromPattern.test(card.mblog.source)) {
+            obj.data.cards.splice(i, 1);
+          }
+       }
+    }
   }
+} catch (e) {
+  console.log(`weibo-mobile.js: ${e.message}, ${e.stack}`)
 }
 $done(JSON.stringify(obj));
