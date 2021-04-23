@@ -204,3 +204,5 @@ rules:
 - DOMAIN-SUFFIX,china.com,DIRECT
 - DOMAIN-SUFFIX,analytics.126.net,REJECT
 - DOMAIN-SUFFIX,gz-data.com,REJECT
+- DOMAIN-SUFFIX,gzads.com,REJECT
+- DOMAIN-SUFFIX,gozendata.com,REJECT
