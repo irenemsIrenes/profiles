@@ -203,3 +203,4 @@ rules:
 - DOMAIN-SUFFIX,googleapis.cn,Proxy
 - DOMAIN-SUFFIX,china.com,DIRECT
 - DOMAIN-SUFFIX,analytics.126.net,REJECT
+- DOMAIN-SUFFIX,gz-data.com,REJECT
