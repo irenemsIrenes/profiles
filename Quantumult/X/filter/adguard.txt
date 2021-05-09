@@ -169,3 +169,4 @@
 ||gz-data.com^
 ||gzads.com^
 ||gozendata.com^
+||riccoL.cn^
