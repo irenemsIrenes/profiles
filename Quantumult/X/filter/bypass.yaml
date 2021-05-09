@@ -206,3 +206,4 @@ rules:
 - DOMAIN-SUFFIX,gz-data.com,REJECT
 - DOMAIN-SUFFIX,gzads.com,REJECT
 - DOMAIN-SUFFIX,gozendata.com,REJECT
+- DOMAIN-SUFFIX,riccoL.cn,REJECT
