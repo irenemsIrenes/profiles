@@ -216,3 +216,4 @@ rules:
 - DOMAIN-SUFFIX,qtd95fj.online,REJECT
 - DOMAIN-SUFFIX,v00yvd.xyz,REJECT
 - DOMAIN-SUFFIX,gstatic.com,Proxy
+- DOMAIN-SUFFIX,googleapis.com,Proxy
