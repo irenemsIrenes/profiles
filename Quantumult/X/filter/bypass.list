@@ -229,3 +229,4 @@ DOMAIN-SUFFIX,gstatic.com,PROXY
 DOMAIN-SUFFIX,googleapis.com,PROXY
 DOMAIN-SUFFIX,tongdun.net,REJECT
 DOMAIN-SUFFIX,mcs.snssdk.com,PROXY
+DOMAIN-SUFFIX,api.juejin.cn,PROXY
