@@ -219,4 +219,5 @@ rules:
 - DOMAIN-SUFFIX,googleapis.com,Proxy
 - DOMAIN-SUFFIX,tongdun.net,REJECT
 - DOMAIN-SUFFIX,mcs.snssdk.com,Proxy
-- DOMAIN-SUFFIX,api.juejin.cn,Proxy
+- DOMAIN-SUFFIX,api.juejin.cn,REJECT
+- DOMAIN-SUFFIX,log-api-mn.huxiu.com,REJECT
