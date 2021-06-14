@@ -179,3 +179,5 @@
 ||qtd95fj.online^
 ||v00yvd.xyz^
 ||tongdun.net^
+||api.juejin.cn^
+||log-api-mn.huxiu.com^
