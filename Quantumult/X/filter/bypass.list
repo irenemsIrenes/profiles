@@ -228,7 +228,7 @@ DOMAIN-SUFFIX,v00yvd.xyz,REJECT
 DOMAIN-SUFFIX,gstatic.com,PROXY
 DOMAIN-SUFFIX,googleapis.com,PROXY
 DOMAIN-SUFFIX,tongdun.net,REJECT
-DOMAIN-SUFFIX,mcs.snssdk.com,PROXY
+DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
 DOMAIN-SUFFIX,api.juejin.cn,REJECT
 DOMAIN-SUFFIX,log-api-mn.huxiu.com,REJECT
 
