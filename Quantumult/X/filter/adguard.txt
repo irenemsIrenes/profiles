@@ -179,5 +179,6 @@
 ||qtd95fj.online^
 ||v00yvd.xyz^
 ||tongdun.net^
+||mcs.snssdk.com^
 ||api.juejin.cn^
 ||log-api-mn.huxiu.com^
