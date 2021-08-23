@@ -99,6 +99,8 @@ function is_block_content(aweme) {
   if (aweme.desc && descPattern.test(aweme.desc)) {
     console.log(`Desc: ${aweme.desc}`)
     return true
+  } else if (aweme.desc) {
+    console.log(`Desc: ${aweme.desc} pass`)
   }
 
   return false
