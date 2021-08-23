@@ -2,7 +2,7 @@ const nicknames = [
 	"(讲|聊|微|电|電|剪|观)影",
 	"影(视|剪|院|探|评)",
 	"剧(场|社)",
-	"(迷|扒|侃|看|追|撩|热血|说)剧",
+	"(迷|神|扒|侃|看|追|撩|热血|说)剧",
 	"(撩|说)大片",
 	"剪(辑|剧|刀)",
 	"(混|渣)剪",
@@ -49,10 +49,10 @@ const nicknames = [
         "外卖",
 ]
 
-const nicknamePattern = new RegExp(nicknames.join("|"), 'g')
-const customVerify = /娱乐|^((?!三农).)*自媒体|贸易|明星|观影|机械制造|.*公司.*|维修/
-const descPattern = /娱乐圈|男装|电视剧|工作室|女装|剧场|剪辑|带货|观影|影视/
-const signaturePattern = /剪辑|明星视频|出租|中介|西装/
+const nicknamePattern = new RegExp(".*(" + nicknames.join("|") + ").*", 'g')
+const customVerify = /.*(娱乐|^((?!三农).)*自媒体|贸易|明星|观影|机械制造|公司|维修).*/
+const descPattern = /.*(娱乐圈|男装|电视剧|工作室|女装|剧场|剪辑|带货|观影|影视).*/
+const signaturePattern = /.*(剪辑|明星视频|出租|中介|西装).*/
 
 
 const enabled_live = false; // 开启直播推荐，默认关闭
