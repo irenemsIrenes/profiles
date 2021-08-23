@@ -78,16 +78,22 @@ function is_block_content(aweme) {
   if (author.nickname && nicknamePattern.test(author.nickname)) {
     console.log(`Nickname: ${author.nickname}`)
     return true
+  } else if(author.nickname) {
+    console.log(`Nickname: ${author.nickname} pass`)
   }
   
   if (author.signature && signaturePattern.test(author.signature)) {
     console.log(`Signature: ${author.signature}`)
     return true
+  } else if (author.signature) {
+    console.log(`Signature: ${author.signature} pass`)
   }
 
   if (author.custom_verify && customVerify.test(author.custom_verify)) {
     console.log(`Custom verify: ${author.custom_verify}`)
     return true
+  } else if (author.custom_verify) {
+    console.log(`Custom verify: ${author.custom_verify} pass`)
   }
   
   if (aweme.desc && descPattern.test(aweme.desc)) {
