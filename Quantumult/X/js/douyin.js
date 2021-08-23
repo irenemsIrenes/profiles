@@ -64,7 +64,7 @@ try {
   if (obj.aweme_list) obj.aweme_list = filter_aweme_list(obj.aweme_list);
   if (obj.aweme_detail) obj.aweme_detail = filter_aweme_detail(obj.aweme_detail);
   $done({ body: JSON.stringify(obj) });
-} catch (error) {
+} catch (e) {
   console.log(`douyin.js: ${e.message}, ${e.stack}`)
   $done($response.body);
 }
