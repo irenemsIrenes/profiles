@@ -26,7 +26,7 @@ const nicknames = [
 	"乐园$",
 	"PM",
 	"编程",
-	"公司",
+	"公司|品牌",
 	"文化传媒",
 	"探房",
 	"房产",
@@ -38,13 +38,14 @@ const nicknames = [
 	"策划师",
 	"穿搭",
 	"格斗",
-	"训练营",
+	"(运|训练)营",
 	"装修",
 	"珠宝",
 	"粉丝团",
 	"商贸",
 	"整形",
 	"贸易",
+        "外卖",
 ]
 
 const nicknamePattern = new RegExp(nicknames.join("|"), 'g')
