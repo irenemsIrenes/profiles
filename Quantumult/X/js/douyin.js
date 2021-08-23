@@ -47,7 +47,8 @@ const nicknames = [
 	"贸易",
 ]
 
-const nicknamePattern = new RegExp(nicknames.join("|"), 'g')const customVerify = /娱乐|^((?!三农).)*自媒体|贸易|明星|观影|机械制造|维修/
+const nicknamePattern = new RegExp(nicknames.join("|"), 'g')
+const customVerify = /娱乐|^((?!三农).)*自媒体|贸易|明星|观影|机械制造|维修/
 const descPattern = /娱乐圈|男装|电视剧|工作室|女装|剧场|剪辑|带货|观影|影视/
 const signaturePattern = /剪辑|明星视频|西装/
 
