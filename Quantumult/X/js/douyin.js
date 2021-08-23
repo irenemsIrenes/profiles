@@ -24,7 +24,7 @@ const nicknames = [
 	"配音",
 	"培训",
 	"娱乐",
-	"乐园$",
+	"乐园",
 	"PM",
 	"编程",
 	"公司|品牌",
@@ -49,10 +49,10 @@ const nicknames = [
         "外卖",
 ]
 
-const nicknamePattern = new RegExp(".*(" + nicknames.join("|") + ").*", 'g')
-const customVerify = /.*(娱乐|^((?!三农).)*自媒体|贸易|明星|观影|机械制造|公司|维修).*/
-const descPattern = /.*(娱乐圈|男装|电视剧|工作室|女装|剧场|剪辑|带货|观影|影视).*/
-const signaturePattern = /.*(剪辑|明星视频|出租|中介|西装).*/
+const nicknamePattern = new RegExp("^.*(" + nicknames.join("|") + ").*$", 'g')
+const customVerify = /^.*(娱乐|((?!三农).)*自媒体|贸易|明星|观影|机械制造|公司|维修).*$/
+const descPattern = /^.*(娱乐圈|男装|电视剧|工作室|女装|剧场|剪辑|带货|观影|影视).*$/
+const signaturePattern = /^.*(剪辑|明星视频|出租|中介|西装).*$/
 
 
 const enabled_live = false; // 开启直播推荐，默认关闭
