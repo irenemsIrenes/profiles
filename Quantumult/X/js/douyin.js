@@ -59,6 +59,7 @@ const customVerifyNames = [
   "机械制造",
   "公司",
   "维修",
+  "网络科技",
 ]
 
 const descNames = [
@@ -80,6 +81,7 @@ const signatureNames = [
   "出租",
   "中介",
   "西装",
+  "二手",
 ]
 
 const nicknamePattern = new RegExp(nicknames.join("|"), 'mi')
