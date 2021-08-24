@@ -50,7 +50,7 @@ const nicknames = [
 ]
 
 const customVerifyNames = [
-  "娱(乐|评",
+  "娱(乐|评)",
   "((?!三农).)*自媒体",
   "贸易",
   "明星",
