@@ -82,6 +82,7 @@ const signatureNames = [
   "中介",
   "西装",
   "二手",
+  "网红",
 ]
 
 const nicknamePattern = new RegExp(nicknames.join("|"), 'mi')
