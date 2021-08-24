@@ -15,7 +15,7 @@ const nicknames = [
 	"服(务商|装)",
 	"(男|女|童)装",
 	"(吃|百)货",
-        "吃.*成都",
+  "吃.*成都",
 	"网红",
 	"手游",
 	"游戏",
@@ -46,13 +46,44 @@ const nicknames = [
 	"商(贸|业)",
 	"整形",
 	"贸易",
-        "外卖",
+  "外卖",
 ]
 
-const nicknamePattern = new RegExp("^.*(" + nicknames.join("|") + ").*$", 'g')
-const customVerify = /^.*(娱乐|((?!三农).)*自媒体|贸易|明星|观影|机械制造|公司|维修).*$/
-const descPattern = /^.*(娱乐圈|男装|电视剧|工作室|女装|剧场|剪辑|带货|观影|影视).*$/
-const signaturePattern = /^.*(剪辑|明星视频|出租|中介|西装).*$/
+const customVerifyNames = [
+  "(娱乐|((?!三农).)*自媒体",
+  "贸易",
+  "明星",
+  "观影",
+  "机械制造",
+  "公司",
+  "维修",
+]
+
+const descNames = [
+  "娱乐圈",
+  "男装",
+  "电视剧",
+  "工作室",
+  "女装",
+  "剧场",
+  "剪辑",
+  "带货",
+  "观影",
+  "影视",
+]
+
+const signatureNames = [
+  "剪辑",
+  "明星视频",
+  "出租",
+  "中介",
+  "西装",
+]
+
+const nicknamePattern = new RegExp(nicknames.join("|"), 'mi')
+const customVerify = new RegExp(customVerifyNames.join("|"), 'mi')
+const descPattern = new RegExp(descNames.join("|"), 'mi')
+const signaturePattern = new RegExp(signatureNames.join("|"), 'mi')
 
 
 const enabled_live = false; // 开启直播推荐，默认关闭
