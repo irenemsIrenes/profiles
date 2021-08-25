@@ -9,7 +9,7 @@ sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 
 from py import common_github
 
-DOH_SERVER = 'doh.pub'
+DOH_SERVER = 'dns.alidns.com'  # 'doh.pub'
 SRC_FILE = 'Quantumult/X/filter/black_domain.list'
 TGT_FILE = 'Quantumult/X/filter/black_domain_ip.list'
 
