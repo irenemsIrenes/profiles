@@ -14,7 +14,7 @@ SRC_FILE = 'Quantumult/X/filter/black_domain.list'
 TGT_FILE = 'Quantumult/X/filter/black_domain_ip.list'
 
 
-def query(name: str, type: str = 'A', sever: str = DOH_SERVER, path: str = 'dns-query') -> dict:
+def query(name: str, type: str = 'A', sever: str = DOH_SERVER, path: str = 'resolve') -> dict:
     resp = requests.get(f"https://{sever}/{path}?name={name}&type={type}", verify=False)
     resp.raise_for_status()
     data = resp.json()
