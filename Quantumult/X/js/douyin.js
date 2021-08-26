@@ -85,10 +85,17 @@ const signatureNames = [
   "网红",
 ]
 
+const anchorNames = [
+  "烧烤",
+  "火锅",
+]
+
 const nicknamePattern = new RegExp(nicknames.join("|"), 'mi')
 const customVerify = new RegExp(customVerifyNames.join("|"), 'mi')
 const descPattern = new RegExp(descNames.join("|"), 'mi')
 const signaturePattern = new RegExp(signatureNames.join("|"), 'mi')
+const anchorPattern = new RegExp(anchorNames.join("|"), 'mi')
+
 
 
 const enabled_live = false; // 开启直播推荐，默认关闭
@@ -106,6 +113,16 @@ try {
 }
 
 function is_block_content(aweme) {
+  if (aweme.anchor_info) {
+    if (anchorPattern.test(aweme.anchor_info.extra)) {
+      console.log(`Anchor: ${aweme.anchor_info.extra}`)
+      return true
+    } else {
+      console.log(`Anchor: ${aweme.anchor_info.extra} pass`)
+    }
+    aweme.anchor_info = null
+  }
+
   let author = aweme.author
   if (!author) {
     return false
@@ -114,29 +131,21 @@ function is_block_content(aweme) {
   if (author.nickname && nicknamePattern.test(author.nickname)) {
     console.log(`Nickname: ${author.nickname}`)
     return true
-  } else if(author.nickname) {
-    console.log(`Nickname: ${author.nickname} pass`)
   }
   
   if (author.signature && signaturePattern.test(author.signature)) {
     console.log(`Signature: ${author.signature}`)
     return true
-  } else if (author.signature) {
-    console.log(`Signature: ${author.signature} pass`)
   }
 
   if (author.custom_verify && customVerify.test(author.custom_verify)) {
     console.log(`Custom verify: ${author.custom_verify}`)
     return true
-  } else if (author.custom_verify) {
-    console.log(`Custom verify: ${author.custom_verify} pass`)
   }
   
   if (aweme.desc && descPattern.test(aweme.desc)) {
     console.log(`Desc: ${aweme.desc}`)
     return true
-  } else if (aweme.desc) {
-    console.log(`Desc: ${aweme.desc} pass`)
   }
 
   return false
