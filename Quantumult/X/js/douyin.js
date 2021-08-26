@@ -88,6 +88,7 @@ const signatureNames = [
 const anchorNames = [
   "烧烤",
   "火锅",
+  "测一测",
 ]
 
 const nicknamePattern = new RegExp(nicknames.join("|"), 'mi')
