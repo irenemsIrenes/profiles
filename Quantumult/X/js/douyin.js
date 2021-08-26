@@ -60,6 +60,7 @@ const customVerifyNames = [
   "公司",
   "维修",
   "网络科技",
+  "百货",
 ]
 
 const descNames = [
@@ -89,6 +90,7 @@ const anchorNames = [
   "烧烤",
   "火锅",
   "测一测",
+  "购物",
 ]
 
 const nicknamePattern = new RegExp(nicknames.join("|"), 'mi')
@@ -114,12 +116,6 @@ try {
 }
 
 function is_block_content(aweme) {
-  if (aweme.anchor_info) {
-    if (anchorPattern.test(aweme.anchor_info.extra)) {
-      return true
-    }
-  }
-
   let author = aweme.author
   if (!author) {
     return false
@@ -143,6 +139,12 @@ function is_block_content(aweme) {
   if (aweme.desc && descPattern.test(aweme.desc)) {
     console.log(`Desc: ${aweme.desc}`)
     return true
+  }
+  
+  if (aweme.anchor_info) {
+    if (anchorPattern.test(aweme.anchor_info.extra)) {
+      return true
+    }
   }
 
   return false
