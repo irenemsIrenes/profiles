@@ -115,12 +115,8 @@ try {
 function is_block_content(aweme) {
   if (aweme.anchor_info) {
     if (anchorPattern.test(aweme.anchor_info.extra)) {
-      console.log(`Anchor: ${aweme.anchor_info.extra}`)
       return true
-    } else {
-      console.log(`Anchor: ${aweme.anchor_info.extra} pass`)
     }
-    aweme.anchor_info = null
   }
 
   let author = aweme.author
