@@ -9,7 +9,7 @@ geoip-maxmind-url = https://raw.githubusercontent.com/JMVoid/ipip2mmdb/release/C
 
 [Proxy Group]
 # 防御
-🛡Guard = select,⛔️Reject,🌐Direct
+Guard = select,Reject,Direct
 
 [Rule]
 # Unbreak 后续规则修正
