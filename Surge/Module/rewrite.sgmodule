@@ -9,7 +9,7 @@ URL-REGEX,^https?:\/\/.*\.pinduoduo\.com\/i\/toutiao,REJECT
 # peopleapp.com
 URL-REGEX,^https:\/\/app\.peopleapp\.com\/Api\/\d+/HomeApi\/getAdvertImage,REJECT
 URL-REGEX,^https:\/\/app\.peopleapp\.com\/Api\/\d+/HomeApi\/adv,REJECT-DICT
-URL-REGEX,^https?:\/\/stat\.peopleapp\.com\/ url reject
+URL-REGEX,^https?:\/\/stat\.peopleapp\.com\/,REJECT
 
 URL-REGEX,^https?:\/\/hydra\.alibaba\.com\/usertrack_,REJECT
 URL-REGEX,^https:\/\/dot\.xinhuazhiyun\.com\/logserver\/,REJECT
@@ -25,7 +25,7 @@ URL-REGEX,^http:\/\/server\.develsoftware\.com:8080\/(getinterstitialbanner|getb
 
 URL-REGEX,^https:\/\/api\.tophub\.fun\/(HotClick|GetAdData),REJECT
 
-URL-REGEX,^https?:\/\/api\.gaoqingdianshi\.com\/api\/ad,REJECT-dict
+URL-REGEX,^https?:\/\/api\.gaoqingdianshi\.com\/api\/ad,REJECT-DICT
 URL-REGEX,^http:\/\/cdn\.gaoqingdiansh\.com\/assets\/mobile\/ios\/track_.*,REJECT
 
 URL-REGEX,^https:\/\/hermes\.hupu\.com\/h\.gif,REJECT-TINYGIF
