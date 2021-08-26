@@ -1,0 +1,9 @@
+#!name=Jd
+#!desc=Jd
+#!system=ios
+
+[Script]
+jdsign = type=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+[MITM]
+hostname = %APPEND% api.m.jd.com
