@@ -41,12 +41,12 @@ URL-REGEX,^https:\/\/api\.weibo\.cn\/\d+\/client\/(throw_batch|addlog_batch),REJ
 URL-REGEX,^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo.*\.ads\.,REJECT-DICT
 
 # 和信通
-^https:\/\/app\.hui724\.com:8443\/app\/ad\/getStartAd,REJECT
+URL-REGEX,^https:\/\/app\.hui724\.com:8443\/app\/ad\/getStartAd,REJECT
 
 # didi
-^https:\/\/ct\.xiaojukeji\.com\/agent\/v\d+\/feeds,REJECT-DICT
-^https:\/\/conf\.diditaxi\.com\.cn\/one\/(page|conf),REJECT-DICT
-^https:\/\/sf\d+-scmcdn-tos\.pstatp\.com\/goofy\/slardar\/fe\/sdk\/,REJECT
+URL-REGEX,^https:\/\/ct\.xiaojukeji\.com\/agent\/v\d+\/feeds,REJECT-DICT
+URL-REGEX,^https:\/\/conf\.diditaxi\.com\.cn\/one\/(page|conf),REJECT-DICT
+URL-REGEX,^https:\/\/sf\d+-scmcdn-tos\.pstatp\.com\/goofy\/slardar\/fe\/sdk\/,REJECT
 
 [Script]
 douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]\/((|follow\/|nearby\/)feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\?,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/douyin.js
