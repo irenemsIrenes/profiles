@@ -15,4 +15,4 @@ let cnt = 0
   }
   //$notify("people news", "ads", "remvoved " + cnt);
 }
-$done(JSON.stringify(obj));
+$done({ body: JSON.stringify(obj) });
