@@ -53,7 +53,7 @@ class AdguardConverter:
                 if len(cols) != 3:
                     continue
                 strategy = cols[2].lower()
-                line = f"{cols[0]},{cols[1]}\n"
+                line = f"{cols[0]},{cols[1]}"
                 if strategy == 'direct':
                     direct_data.append(line)
                 elif strategy == 'proxy':
