@@ -61,6 +61,7 @@ const customVerifyNames = [
   "维修",
   "网络科技",
   "百货",
+  "影评",
 ]
 
 const descNames = [
