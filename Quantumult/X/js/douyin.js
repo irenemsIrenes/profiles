@@ -144,7 +144,7 @@ function is_block_content(aweme) {
   }
   
   if (aweme.anchor_info) {
-    if (anchorPattern.test(aweme.anchor_info.extra)) {
+    if (anchorPattern.test(aweme.anchor_info.title) || anchorPattern.test(aweme.anchor_info.title_tag) || anchorPattern.test(aweme.anchor_info.extra)) {
       return true
     }
   }
