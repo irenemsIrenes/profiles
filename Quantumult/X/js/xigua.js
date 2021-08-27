@@ -10,7 +10,6 @@ if (obj.data) {
     if (content.raw_ad_data || content.label == '广告' || content.ad_id
     	|| content.ad_label)
     	obj.data.splice(i, 1);
-      //$notify("xi gua", "ads", "remvoved");
   }
 }
-$done(JSON.stringify(obj));
+$done({ body: JSON.stringify(obj) });
