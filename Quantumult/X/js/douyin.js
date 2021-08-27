@@ -49,6 +49,7 @@ const nicknames = [
   "整形",
   "贸易",
   "外卖",
+  "家政",
 ]
 
 const customVerifyNames = [
@@ -93,6 +94,7 @@ const anchorNames = [
   "火锅",
   "测一测",
   "购物",
+  "团购",
 ]
 
 const nicknamePattern = new RegExp(nicknames.join("|"), 'mi')
