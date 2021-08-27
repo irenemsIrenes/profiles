@@ -49,7 +49,7 @@ const nicknames = [
   "整形",
   "贸易",
   "外卖",
-  "家政",
+  "家政|劳务",
 ]
 
 const customVerifyNames = [
