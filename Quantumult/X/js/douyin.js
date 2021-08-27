@@ -144,6 +144,13 @@ function is_block_content(aweme) {
   }
   
   if (aweme.anchor_info) {
+    if (aweme.anchor_info.title) {
+      console.log(`aweme.anchor_info.title: ${aweme.anchor_info.title}`)
+    }
+    if (aweme.anchor_info.title_tag) {
+      console.log(`aweme.anchor_info.title_tag: ${aweme.anchor_info.title_tag}`)
+    }
+    
     if (anchorPattern.test(aweme.anchor_info.title) || anchorPattern.test(aweme.anchor_info.title_tag) || anchorPattern.test(aweme.anchor_info.extra)) {
       return true
     }
