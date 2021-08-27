@@ -20,4 +20,4 @@ if (obj.feeds) {
   obj.count = obj.count - cnt;
   console.log(`removed ${cnt}`)
 }
-$done(JSON.stringify(obj));
+$done({ body: JSON.stringify(obj) });
