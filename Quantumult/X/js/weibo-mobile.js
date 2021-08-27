@@ -31,4 +31,4 @@ try {
 } catch (e) {
   console.log(`weibo-mobile.js: ${e.message}, ${e.stack}`)
 }
-$done(JSON.stringify(obj));
+$done({ body: JSON.stringify(obj) });
