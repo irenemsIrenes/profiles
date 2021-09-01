@@ -10,7 +10,7 @@ dns-server = 119.29.29.29,8.8.8.8
 doh-server = https://dns.alidns.com/dns-query
 
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/reject.list,Reject
+RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/reject.list,Reject-drop
 # Unbreak 后续规则修正
 RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list,Direct
 
