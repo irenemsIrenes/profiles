@@ -92,7 +92,7 @@ const signatureNames = [
 const anchorNames = [
   "烧烤",
   "火锅",
-  "测一测",
+  "测(一?)测",
   "购物",
   "团购",
   "电影",
