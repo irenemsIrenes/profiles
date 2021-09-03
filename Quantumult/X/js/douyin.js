@@ -28,7 +28,7 @@ const nicknames = [
   "娱乐",
   "乐园",
   "PM",
-  "编程",
+  "编程|教学",
   "公司|品牌",
   "文化传媒",
   "探房",
@@ -97,6 +97,7 @@ const anchorNames = [
   "团购",
   "电影",
   "食品|折扣",
+  "教学",
 ]
 
 const nicknamePattern = new RegExp(nicknames.join("|"), 'mi')
