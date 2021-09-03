@@ -2,7 +2,7 @@ const nicknames = [
   "(讲|聊|微|电|電|剪|观|说|照|野|泡|探)影",
   "影(视|剪|院|探|评)",
   "剧(场|社)",
-  "(迷|神|扒|侃|看|追|撩|热血|说)剧",
+  "(迷|神|扒|侃|看|追|撩|热血|说|好)剧",
   "(撩|说|看|探)(大?)片",
   "解说",
   "剪(辑|剧|刀)",
@@ -69,7 +69,7 @@ const customVerifyNames = [
 const descNames = [
   "娱乐圈",
   "男装",
-  "电视剧",
+  "(电视|好)剧",
   "工作室",
   "女装",
   "剧场",
@@ -158,6 +158,11 @@ function is_block_content(aweme) {
     if (anchorPattern.test(aweme.anchor_info.title) || anchorPattern.test(aweme.anchor_info.title_tag) || anchorPattern.test(aweme.anchor_info.extra)) {
       return true
     }
+  }
+  
+  if (aweme.mix_info && (descPattern.test(aweme.mix_info.mix_name) || descPattern.test(aweme.mix_info.desc))) {
+    console.log(`mix_name=${aweme.mix_info.mix_name}, mix_desc=${aweme.mix_info.desc}`)
+    return true
   }
 
   return false
