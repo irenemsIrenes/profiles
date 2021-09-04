@@ -99,6 +99,7 @@ const anchorNames = [
   "电影",
   "食品|折扣",
   "教学",
+  "游戏视频",
 ]
 
 const nicknamePattern = new RegExp(nicknames.join("|"), 'mi')
