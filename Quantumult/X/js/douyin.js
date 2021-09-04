@@ -78,6 +78,7 @@ const descNames = [
   "带货",
   "观影",
   "影视",
+  "游戏",
 ]
 
 const signatureNames = [
