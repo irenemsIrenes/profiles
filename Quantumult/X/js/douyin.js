@@ -50,6 +50,7 @@ const nicknames = [
   "贸易",
   "外卖",
   "家政|劳务",
+  "测(试|一测)",
 ]
 
 const customVerifyNames = [
