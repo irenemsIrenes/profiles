@@ -51,6 +51,7 @@ const nicknames = [
   "外卖|批发",
   "直销|销售|厂家|家政|劳务",
   "测(试|一测)",
+  ".+铺",
 ]
 
 const customVerifyNames = [
