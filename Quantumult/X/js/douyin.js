@@ -1,3 +1,4 @@
+// user name
 const nicknames = [
   "(讲|聊|微|电|電|剪|观|说|照|野|泡|探|猎)影",
   "影(视|剪|院|探|评)",
@@ -54,6 +55,7 @@ const nicknames = [
   ".+铺",
 ]
 
+// user custom verify
 const customVerifyNames = [
   "娱(乐|评)",
   "((?!三农).)*自媒体",
@@ -68,6 +70,7 @@ const customVerifyNames = [
   "影评",
 ]
 
+// video description
 const descNames = [
   "娱乐圈",
   "男装",
@@ -82,6 +85,7 @@ const descNames = [
   "游戏",
 ]
 
+// user signatures
 const signatureNames = [
   "剪辑",
   "明星视频",
@@ -92,6 +96,7 @@ const signatureNames = [
   "网红",
 ]
 
+// in the top of nickname 
 const anchorNames = [
   "烧烤",
   "火锅",
@@ -104,12 +109,36 @@ const anchorNames = [
   "游戏视频",
 ]
 
+// below the description
+
+// 相关视频
+const relatedVideoNames = [
+  "电(视剧|影)"
+]
+
+// 合集
+const mixNames = [
+  "(电视|好)剧",
+  "点击看全集"
+]
+
+// 相关阅读
+const relatedReadingNames = [
+  "电视剧"
+]
+
+
+
+
 const nicknamePattern = new RegExp(nicknames.join("|"), 'mi')
 const customVerify = new RegExp(customVerifyNames.join("|"), 'mi')
 const descPattern = new RegExp(descNames.join("|"), 'mi')
 const signaturePattern = new RegExp(signatureNames.join("|"), 'mi')
 const anchorPattern = new RegExp(anchorNames.join("|"), 'mi')
-
+const relatedVideoTitlePattern = new RegExp(relatedVideoNames.join("|"), 'mi')
+const mixInfoName = new RegExp(mixNames.join("|"), 'mi')
+const mixInfoDesc = descPattern
+const relatedReadingTitlePattern = new RegExp(relatedReadingNames.join("|"), 'mi')
 
 
 const enabled_live = false; // 开启直播推荐，默认关闭
@@ -165,8 +194,18 @@ function is_block_content(aweme) {
     }
   }
   
-  if (aweme.mix_info && (descPattern.test(aweme.mix_info.mix_name) || descPattern.test(aweme.mix_info.desc))) {
+  if (aweme.mix_info && (mixInfoName.test(aweme.mix_info.mix_name) || mixInfoDesc.test(aweme.mix_info.desc))) {
     console.log(`mix_name=${aweme.mix_info.mix_name}, mix_desc=${aweme.mix_info.desc}`)
+    return true
+  }
+
+  if (aweme.toutiao_reading_bar && relatedReadingNames.test(aweme.toutiao_reading_bar.title)) {
+    console.log(`toutiao_reading_bar.title=${aweme.toutiao_reading_bar.title}`)
+    return true
+  }
+
+  if (aweme.xigua_related_bar && relatedVideoTitlePattern.test(aweme.xigua_related_bar.title)) {
+    console.log(`xigua_related_bar.title=${aweme.xigua_related_bar.title}`)
     return true
   }
 
