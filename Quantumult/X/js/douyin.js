@@ -113,7 +113,8 @@ const anchorNames = [
 
 // 相关视频
 const relatedVideoNames = [
-  "电(视剧|影)"
+  "电(视剧|影)",
+  "全集",
 ]
 
 // 合集
