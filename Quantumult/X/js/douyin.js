@@ -200,7 +200,7 @@ function is_block_content(aweme) {
     return true
   }
 
-  if (aweme.toutiao_reading_bar && relatedReadingNames.test(aweme.toutiao_reading_bar.title)) {
+  if (aweme.toutiao_reading_bar && relatedReadingTitlePattern.test(aweme.toutiao_reading_bar.title)) {
     console.log(`toutiao_reading_bar.title=${aweme.toutiao_reading_bar.title}`)
     return true
   }
