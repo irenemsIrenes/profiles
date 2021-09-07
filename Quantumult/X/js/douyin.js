@@ -129,6 +129,13 @@ const relatedReadingNames = [
 ]
 
 
+// vs_entry
+const vsEntryNames = [
+  "dota",
+  "游戏",
+  "直播",
+]
+
 
 
 const nicknamePattern = new RegExp(nicknames.join("|"), 'mi')
@@ -140,6 +147,7 @@ const relatedVideoTitlePattern = new RegExp(relatedVideoNames.join("|"), 'mi')
 const mixInfoName = new RegExp(mixNames.join("|"), 'mi')
 const mixInfoDesc = descPattern
 const relatedReadingTitlePattern = new RegExp(relatedReadingNames.join("|"), 'mi')
+const vsEntryPattern = new RegExp(vsEntryNames.join("|"), 'mi')
 
 
 const enabled_live = false; // 开启直播推荐，默认关闭
@@ -207,6 +215,11 @@ function is_block_content(aweme) {
 
   if (aweme.xigua_related_bar && relatedVideoTitlePattern.test(aweme.xigua_related_bar.title)) {
     console.log(`xigua_related_bar.title=${aweme.xigua_related_bar.title}`)
+    return true
+  }
+  
+  if (aweme.vs_entry && vsEntryPattern.test(aweme.vs_entry.title)) {
+    console.log(`vs_entry.title=${aweme.vs_entry.title}`)
     return true
   }
 
