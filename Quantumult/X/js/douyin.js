@@ -107,6 +107,8 @@ const anchorNames = [
   "食品|折扣",
   "教学",
   "游戏视频",
+  "定制",
+  "手机盒",
 ]
 
 // below the description
