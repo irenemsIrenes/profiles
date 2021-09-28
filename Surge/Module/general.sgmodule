@@ -28,3 +28,4 @@ IP-CIDR,0.0.0.0/32,REJECT
 
 
 [Host]
+*.127.net = doh-server:https://dns.alidns.com/dns-query
