@@ -182,3 +182,4 @@
 ||mcs.snssdk.com^
 ||api.juejin.cn^
 ||log-api-mn.huxiu.com^
+||pc768.com^
