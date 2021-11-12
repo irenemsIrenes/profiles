@@ -83,6 +83,7 @@ const descNames = [
   "观影",
   "影视",
   "游戏",
+  "\s+#合拍\s*",
 ]
 
 // user signatures
