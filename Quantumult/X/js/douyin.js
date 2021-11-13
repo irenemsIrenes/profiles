@@ -111,6 +111,7 @@ const anchorNames = [
   "定制",
   "手机盒",
   "头像",
+  "道具",
 ]
 
 // below the description
