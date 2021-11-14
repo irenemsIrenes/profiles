@@ -131,7 +131,8 @@ const mixNames = [
 
 // 相关阅读
 const relatedReadingNames = [
-  "电视剧"
+  "电视剧",
+  "战地2042",
 ]
 
 
