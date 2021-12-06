@@ -4,18 +4,22 @@
 
 [Rule]
 URL-REGEX,^https?:\/\/(api.*\.amemv|aweme\.snssdk)\.com\/api\/ad\/,REJECT-DROP
-URL-REGEX,^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/aweme\/v\d+\/aweme\/(detail|stats)\/,REJECT-DROP
-URL-REGEX,^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/aweme\/v\d+\/(familiar|social|upload|language|play\/stats|post|poi|settings|rate|platform|app|im|device|newyear|ttregion|check|compliance|anchor|commerce|abtest)\/,REJECT-DROP
+
+#URL-REGEX,^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/aweme\/v\d+\/aweme\/(detail|stats)\/,REJECT-DROP
+
+#URL-REGEX,^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/aweme\/v\d+\/(familiar|social|upload|language|play\/stats|post|poi|settings|rate|platform|app|im|device|newyear|ttregion|check|compliance|anchor|commerce|abtest)\/,REJECT-DROP
+
 URL-REGEX,^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/(vapp\/inner_ad|ies|jssdk_signature|log|effect|collect|service|location|client_impr|monitor)\/,REJECT-DROP
 
-URL-REGEX,^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/api\/v\d+\/data\/,REJECT-DROP
+#URL-REGEX,^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/api\/v\d+\/data\/,REJECT-DROP
 
-URL-REGEX,^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/(amazing|cloudpush|growth|activity|share_strategy|tfe)\/,REJECT-DROP
-URL-REGEX,^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/\d+\/status\/,REJECT-DROP
+#URL-REGEX,^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/(amazing|cloudpush|growth|activity|share_strategy|tfe)\/,REJECT-DROP
+
+#URL-REGEX,^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/\d+\/status\/,REJECT-DROP
 
 URL-REGEX,^https?:\/\/x?log.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/,REJECT-DROP
-URL-REGEX,^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/v\d+\/getInfo,REJECT-DROP
-URL-REGEX,^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/model\/api\/arithmetics,REJECT-DROP
+#URL-REGEX,^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/v\d+\/getInfo,REJECT-DROP
+#URL-REGEX,^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/model\/api\/arithmetics,REJECT-DROP
 
 [URL Rewrite]
 ^https?:\/\/api.*\.amemv\.com\/aweme\/v\d\/ https://aweme.snssdk.com/aweme/v1/ header
