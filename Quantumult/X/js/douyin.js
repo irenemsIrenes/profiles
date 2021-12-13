@@ -91,6 +91,7 @@ const descNames = [
   "测一测",
   "智商测试",
   "钓鱼|野钓",
+  "撞脸",
 ]
 
 // user signatures
