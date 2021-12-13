@@ -54,6 +54,9 @@ const nicknames = [
   "测(试|一测)",
   ".+铺",
   "钓鱼|野钓",
+  "严选",
+  "好物",
+  "推荐",
 ]
 
 // user custom verify
