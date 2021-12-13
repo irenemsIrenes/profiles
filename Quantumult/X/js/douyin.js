@@ -53,6 +53,7 @@ const nicknames = [
   "直销|销售|厂家|家政|劳务",
   "测(试|一测)",
   ".+铺",
+  "钓鱼|野钓",
 ]
 
 // user custom verify
@@ -86,6 +87,7 @@ const descNames = [
   "#合拍",
   "测一测",
   "智商测试",
+  "钓鱼|野钓",
 ]
 
 // user signatures
