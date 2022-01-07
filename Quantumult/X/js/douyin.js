@@ -112,6 +112,7 @@ const descNames = [
   "创业",
   "室内改造",
   "盖房子",
+  "行程轨迹|足迹地图",
 ]
 
 // user signatures
