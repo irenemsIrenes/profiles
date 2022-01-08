@@ -67,6 +67,7 @@ const nicknames = [
   "汽车保养",
   "超跑",
   "评测",
+  "探店",
 ]
 
 // user custom verify
@@ -83,6 +84,7 @@ const customVerifyNames = [
   "百货",
   "影评",
   "蛋糕|甜甜圈",
+  "探店|团购",
 ]
 
 // video description
@@ -113,6 +115,8 @@ const descNames = [
   "室内改造",
   "盖房子",
   "行程轨迹|足迹地图",
+  "#.+测试",
+  "团购",
 ]
 
 // user signatures
