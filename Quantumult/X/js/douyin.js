@@ -68,6 +68,7 @@ const nicknames = [
   "超跑",
   "评测",
   "探店",
+  "跳伞",
 ]
 
 // user custom verify
@@ -117,6 +118,7 @@ const descNames = [
   "行程轨迹|足迹地图",
   "#.+测试",
   "团购",
+  "跳伞|教练",
 ]
 
 // user signatures
@@ -130,6 +132,7 @@ const signatureNames = [
   "网红",
   "地产",
   "室内设计",
+  "跳伞|教练",
 ]
 
 // in the top of nickname 
