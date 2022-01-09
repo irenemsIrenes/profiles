@@ -69,6 +69,7 @@ const nicknames = [
   "评测",
   "探店",
   "跳伞",
+  ".+厂$",
 ]
 
 // user custom verify
@@ -86,6 +87,7 @@ const customVerifyNames = [
   "影评",
   "蛋糕|甜甜圈",
   "探店|团购",
+  ".+厂$",
 ]
 
 // video description
