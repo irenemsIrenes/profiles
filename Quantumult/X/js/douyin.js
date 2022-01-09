@@ -131,6 +131,8 @@ const descNames = [
   "#.*酒店",
   "#.*特效",
   "改装车",
+  "#.*好物",
+  "#.*年货节",
 ]
 
 // user signatures
