@@ -133,6 +133,7 @@ const signatureNames = [
   "地产",
   "室内设计",
   "跳伞|教练",
+  "团购",
 ]
 
 // in the top of nickname 
