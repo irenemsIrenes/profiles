@@ -274,9 +274,9 @@ function is_block_content(aweme) {
       console.log(`aweme.anchor_info.title_tag: ${aweme.anchor_info.title_tag}`)
     }
     
-    if (aweme.anchor_info.extra) {
+    /*if (aweme.anchor_info.extra) {
       console.log(`aweme.anchor_info.extra: ${aweme.anchor_info.extra}`)
-    }
+    }*/
     
     if ((aweme.anchor_info.title && anchorPattern.test(aweme.anchor_info.title)) || (aweme.anchor_info.title_tag && anchorPattern.test(aweme.anchor_info.title_tag)) || (aweme.anchor_info.extra && anchorPattern.test(aweme.anchor_info.extra))) {
       console.log("anchor removed")
