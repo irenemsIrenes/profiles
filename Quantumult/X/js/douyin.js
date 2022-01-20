@@ -275,6 +275,7 @@ function is_block_content(aweme) {
     }
     
     if (anchorPattern.test(aweme.anchor_info.title) || anchorPattern.test(aweme.anchor_info.title_tag) || anchorPattern.test(aweme.anchor_info.extra)) {
+      console.log("anchor removed")
       return true
     }
   }
