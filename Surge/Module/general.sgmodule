@@ -7,9 +7,7 @@ tls-provider = openssl
 always-real-ip = msftconnecttest.com, msftncsi.com, *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn, *.battle.net
 geoip-maxmind-url = https://raw.githubusercontent.com/JMVoid/ipip2mmdb/release/Country.mmdb
 dns-server = 119.29.29.29,8.8.8.8
-doh-server = https://dns.alidns.com/dns-query
-doh-server = https://doh.pub/dns-query
-doh-server = https://dns.google/dns-query
+doh-server = https://dns.alidns.com/dns-query,https://doh.pub/dns-query,https://dns.google/dns-query
 
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/reject.list,Reject
