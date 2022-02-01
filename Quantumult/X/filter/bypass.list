@@ -232,4 +232,5 @@ DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
 DOMAIN-SUFFIX,api.juejin.cn,REJECT
 DOMAIN-SUFFIX,log-api-mn.huxiu.com,REJECT
 DOMAIN-SUFFIX,pc768.com,REJECT
+DOMAIN-SUFFIX,tencent-cloud.net,DIRECT 
 

@@ -1,0 +1,5 @@
+#!name=compatibility-mode
+#!desc=Tun only
+
+[General]
+compatibility-mode = 3
