@@ -74,6 +74,7 @@ const nicknames = [
   "美(容|业)",
   "自驾",
   "特效",
+  ".+娱",
 ]
 
 // user custom verify
