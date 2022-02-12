@@ -150,6 +150,7 @@ const descNames = [
   "颜值|打分",
   "全民|烧脑｜表情包",
   "房产",
+  "时光穿梭",
 ]
 
 // user signatures
