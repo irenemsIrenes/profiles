@@ -75,6 +75,8 @@ const nicknames = [
   "自驾",
   "特效",
   ".+(娱|聘)",
+  ".+连锁",
+  "(发|脸)型",
 ]
 
 // user custom verify
@@ -151,6 +153,8 @@ const descNames = [
   "全民|烧脑｜表情包",
   "房产",
   "时光穿梭",
+  "壁纸",
+  "(发|脸)型",
 ]
 
 // user signatures
@@ -168,6 +172,8 @@ const signatureNames = [
   "团购",
   "垂钓|钓鱼",
   "(进口|豪|汽|追|看|改装)车",
+  "投资",
+  "资本",
 ]
 
 // in the top of nickname 
