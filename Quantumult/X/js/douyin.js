@@ -77,6 +77,7 @@ const nicknames = [
   ".+(娱|聘)",
   ".+连锁",
   "(发|脸)型",
+  "蛇",
 ]
 
 // user custom verify
@@ -155,6 +156,7 @@ const descNames = [
   "时光穿梭",
   "壁纸",
   "(发|脸)型",
+  "蛇",
 ]
 
 // user signatures
