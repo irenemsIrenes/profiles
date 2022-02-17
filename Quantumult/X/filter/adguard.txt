@@ -184,3 +184,4 @@
 ||log-api-mn.huxiu.com^
 ||pc768.com^
 ||cnzz.com^
+||shujupie.com^
