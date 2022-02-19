@@ -8,6 +8,7 @@ always-real-ip = msftconnecttest.com, msftncsi.com, *.msftconnecttest.com, *.msf
 geoip-maxmind-url = https://raw.githubusercontent.com/JMVoid/ipip2mmdb/release/Country.mmdb
 dns-server = 119.29.29.29,8.8.8.8
 doh-server = https://dns.alidns.com/dns-query,https://dns.google/dns-query,https://doh.pub/dns-query
+wifi-assist = false
 
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/reject.list,Reject
