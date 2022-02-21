@@ -244,5 +244,6 @@ DOMAIN-SUFFIX,sensorsdata.cn,REJECT
 DOMAIN-SUFFIX,flurry.com,REJECT
 DOMAIN-SUFFIX,sp0.baidu.com,REJECT
 DOMAIN-SUFFIX,di2y21.top,REJECT
-
+DOMAIN,zhanzhang.toutiao.com,REJECT
+DOMAIN-SUFFIX,uyunad.com,REJECT
 
