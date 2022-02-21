@@ -52,6 +52,9 @@ URL-REGEX,^https:\/\/sf\d+-scmcdn-tos\.pstatp\.com\/goofy\/slardar\/fe\/sdk\/,RE
 URL-REGEX,^https:\/\/www\.zhihu\.com\/sc-profiler,REJECT
 URL-REGEX,^https:\/\/www\.zhihu\.com\/zbst\/events,REJECT
 
+# weibo
+URL-REGEX,^https:\/\/m\.weibo\.cn\/h5logs\/actionLog,REJECT
+
 [Script]
 douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]\/((|follow\/|nearby\/)feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\?,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/douyin.js
 
