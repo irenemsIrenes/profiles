@@ -190,3 +190,7 @@
 ||bbzplhy.com^
 ||vedamobi.com^
 ||hm.baidu.com^
+||sensorsdata.cn^
+||flurry.com^
+||sp0.baidu.com^
+||di2y21.top^
