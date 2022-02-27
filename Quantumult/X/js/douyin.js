@@ -97,7 +97,7 @@ const customVerifyNames = [
   "蛋糕|甜甜圈",
   "探店|团购",
   ".+厂$",
-  "军事专家",
+  "军事(领域|专家)", 
 ]
 
 // video description
@@ -160,6 +160,7 @@ const descNames = [
   "(发|脸)型",
   "蛇",
   "台球|斯诺克",
+  "奥迪|宝马|玛莎拉蒂|法拉利|布加迪", 
 ]
 
 // user signatures
@@ -179,7 +180,6 @@ const signatureNames = [
   "(进口|豪|汽|追|看|改装)车",
   "投资",
   "资本",
-  "奥迪|宝马|玛莎拉蒂|法拉利|布加迪",
 ]
 
 // in the top of nickname 
