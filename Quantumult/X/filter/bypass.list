@@ -247,4 +247,7 @@ DOMAIN-SUFFIX,di2y21.top,REJECT
 DOMAIN,zhanzhang.toutiao.com,REJECT
 DOMAIN-SUFFIX,uyunad.com,REJECT
 DOMAIN-SUFFIX,portal101.cn,REJECT
+DOMAIN,analytics-api.smzdm.com,REJECT
+DOMAIN,track.soho.com,REJECT
+
 
