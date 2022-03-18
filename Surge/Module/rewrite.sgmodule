@@ -55,6 +55,9 @@ URL-REGEX,^https:\/\/www\.zhihu\.com\/zbst\/events,REJECT
 # weibo
 URL-REGEX,^https:\/\/m\.weibo\.cn\/h5logs\/actionLog,REJECT
 
+# smzdm
+URL-REGEX,^https:\/\/analytics-api(-\d+)?\.smzdm\.com,REJECT-DICT
+
 [Script]
 douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]\/((|follow\/|nearby\/)feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\?,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/douyin.js
 
