@@ -9,7 +9,7 @@ geoip-maxmind-url = https://raw.githubusercontent.com/JMVoid/ipip2mmdb/release/C
 dns-server = 119.29.29.29,8.8.8.8
 doh-server = https://dns.alidns.com/dns-query,https://dns.google/dns-query,https://doh.pub/dns-query
 wifi-assist = false
-hybrid = off
+all-hybrid = false
 skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com
 
 [Rule]
