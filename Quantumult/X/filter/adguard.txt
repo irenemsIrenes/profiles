@@ -197,4 +197,4 @@
 0.0.0.0 zhanzhang.toutiao.com
 ||uyunad.com^
 ||portal101.cn^
-0.0.0.0 track.soho.com
+0.0.0.0 track.sohu.com
