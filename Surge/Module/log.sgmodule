@@ -1,2 +1,6 @@
+#!name=log
+#!desc=log level info
+
+
 [General]
 loglevel = info
