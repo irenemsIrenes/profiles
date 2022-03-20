@@ -60,8 +60,14 @@ URL-REGEX,^https:\/\/analytics-api(-\d+)?\.smzdm\.com,REJECT-DICT
 
 # umeng
 URL-REGEX,^https:\/\/(?!errlog).+\.umeng\.com,REJECT-DICT
-URL-REGEX,^https:\/\/errlog\.umeng\.com\/apm_logs,REJECT-DICT
-URL-REGEX,^https:\/\/errlog\.umeng\.com\/(?!apm_logs).*,REJECT-DROP
+URL-REGEX,^https:\/\/errlog\.umeng\.com\/(?!(apm_logs|upload|api)),REJECT-DICT
+
+[Map Local]
+# umeng
+^https:\/\/errlog\.umeng\.com\/apm_logs data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/umeng-apm_logs.json"
+^https:\/\/errlog\.umeng\.com\/upload data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/umeng-upload.txt"
+^https:\/\/errlog\.umeng\.com\/api\/ data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/umeng-api.txt"
+
 
 [Script]
 douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]\/((|follow\/|nearby\/)feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\?,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/douyin.js
