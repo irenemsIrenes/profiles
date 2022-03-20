@@ -60,6 +60,8 @@ URL-REGEX,^https:\/\/analytics-api(-\d+)?\.smzdm\.com,REJECT-DICT
 
 # umeng
 URL-REGEX,^https:\/\/(?!errlog).+\.umeng\.com,REJECT-DICT
+URL-REGEX,^https:\/\/errlog\.umeng\.com\/apm_logs,REJECT-DICT
+URL-REGEX,^https:\/\/errlog\.umeng\.com\/(?!apm_logs).*,REJECT-DROP
 
 [Script]
 douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]\/((|follow\/|nearby\/)feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\?,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/douyin.js
