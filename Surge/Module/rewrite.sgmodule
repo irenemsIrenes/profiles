@@ -8,7 +8,7 @@ URL-REGEX,^https?:\/\/.*\.pinduoduo\.com\/i\/toutiao,REJECT
 
 # peopleapp.com
 URL-REGEX,^https:\/\/app\.peopleapp\.com\/Api\/\d+/HomeApi\/getAdvertImage,REJECT
-URL-REGEX,^https:\/\/app\.peopleapp\.com\/Api\/\d+/HomeApi\/adv,REJECT-DICT
+URL-REGEX,^https:\/\/app\.peopleapp\.com\/Api\/\d+/HomeApi\/adv,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/stat\.peopleapp\.com\/,REJECT
 
 URL-REGEX,^https?:\/\/hydra\.alibaba\.com\/usertrack_,REJECT
@@ -18,34 +18,34 @@ URL-REGEX,^https:\/\/handycam\.alicdn\.com\/,REJECT
 
 # 51 wnl
 URL-REGEX,^https?:\/\/configsys\.51wnl-cq\.com\/api\/config\/getinfos,REJECT
-URL-REGEX,^https?:\/\/.*\.51wnl-cq\.com\/api\/(.*Ad|News),REJECT-DICT
+URL-REGEX,^https?:\/\/.*\.51wnl-cq\.com\/api\/(.*Ad|News),REJECT-TINYGIF
 URL-REGEX,^https?:\/\/.*\.51wnl-cq\.com\/contentapi/api.+/.*Ad,REJECT
 
-URL-REGEX,^http:\/\/server\.develsoftware\.com:8080\/(getinterstitialbanner|getbanner|showbanner|getadsettings),REJECT-DICT
+URL-REGEX,^http:\/\/server\.develsoftware\.com:8080\/(getinterstitialbanner|getbanner|showbanner|getadsettings),REJECT-TINYGIF
 
 URL-REGEX,^https:\/\/api\.tophub\.fun\/(HotClick|GetAdData),REJECT
 
-URL-REGEX,^https?:\/\/api\.gaoqingdianshi\.com\/api\/ad,REJECT-DICT
+URL-REGEX,^https?:\/\/api\.gaoqingdianshi\.com\/api\/ad,REJECT-TINYGIF
 URL-REGEX,^http:\/\/cdn\.gaoqingdiansh\.com\/assets\/mobile\/ios\/track_.*,REJECT
 
 URL-REGEX,^https:\/\/hermes\.hupu\.com\/h\.gif,REJECT-TINYGIF
 
-URL-REGEX,^https:\/\/api\.taou\.com\/sdk\/global\/splash_ad,REJECT-DICT
-URL-REGEX,^https:\/\/open\.taou\.com\/maimai\/(adtk|launch_ad),REJECT-DICT
+URL-REGEX,^https:\/\/api\.taou\.com\/sdk\/global\/splash_ad,REJECT-TINYGIF
+URL-REGEX,^https:\/\/open\.taou\.com\/maimai\/(adtk|launch_ad),REJECT-TINYGIF
 
 URL-REGEX,^https?:\/\/cdn\.aixifan\.com\/acsdk\/log\.min\.js,REJECT
 
 URL-REGEX,^https:\/\/api\.weibo\.cn\/\d+\/logservice,REJECT
 URL-REGEX,^https:\/\/api\.weibo\.cn\/client\/addlog_batch,REJECT
 URL-REGEX,^https:\/\/api\.weibo\.cn\/\d+\/client\/(throw_batch|addlog_batch),REJECT
-URL-REGEX,^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo.*\.ads\.,REJECT-DICT
+URL-REGEX,^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo.*\.ads\.,REJECT-TINYGIF
 
 # 和信通
 URL-REGEX,^https:\/\/app\.hui724\.com:8443\/app\/ad\/getStartAd,REJECT
 
 # didi
-URL-REGEX,^https:\/\/ct\.xiaojukeji\.com\/agent\/v\d+\/feeds,REJECT-DICT
-URL-REGEX,^https:\/\/conf\.diditaxi\.com\.cn\/one\/(page|conf),REJECT-DICT
+URL-REGEX,^https:\/\/ct\.xiaojukeji\.com\/agent\/v\d+\/feeds,REJECT-TINYGIF
+URL-REGEX,^https:\/\/conf\.diditaxi\.com\.cn\/one\/(page|conf),REJECT-TINYGIF
 URL-REGEX,^https:\/\/sf\d+-scmcdn-tos\.pstatp\.com\/goofy\/slardar\/fe\/sdk\/,REJECT
 
 # zhihu
@@ -56,11 +56,11 @@ URL-REGEX,^https:\/\/www\.zhihu\.com\/zbst\/events,REJECT
 URL-REGEX,^https:\/\/m\.weibo\.cn\/h5logs\/actionLog,REJECT
 
 # smzdm
-URL-REGEX,^https:\/\/analytics-api(-\d+)?\.smzdm\.com,REJECT-DICT
+URL-REGEX,^https:\/\/analytics-api(-\d+)?\.smzdm\.com,REJECT-TINYGIF
 
 # umeng
-URL-REGEX,^https:\/\/(?!errlog).+\.umeng\.com,REJECT-DICT
-URL-REGEX,^https:\/\/errlog\.umeng\.com\/(?!(apm_logs|upload|api)),REJECT-DICT
+URL-REGEX,^https:\/\/(?!errlog).+\.umeng\.com,REJECT-TINYGIF
+URL-REGEX,^https:\/\/errlog\.umeng\.com\/(?!(apm_logs|upload|api)),REJECT-TINYGIF
 
 [Map Local]
 # umeng
