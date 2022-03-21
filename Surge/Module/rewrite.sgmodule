@@ -82,7 +82,7 @@ maimai = type=http-response,pattern=^https:\/\/open\.taou\.com\/maimai\/feed\/v\
 
 tieba1 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/f\/getFrsData,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/tieba-getFrsData.js
 
-tieba2 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/p\/getPbData,requires-body=1,script-path=https://github.com/irenemsIrenes/profiles/blob/master/Surge/Scripts/tieba-getPbData.js
+tieba2 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/p\/getPbData,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/tieba-getPbData.js
 
 [MITM]
 hostname = %APPEND% sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.tophub.fun,*.51wnl-cq.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com
