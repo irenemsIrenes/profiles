@@ -63,7 +63,7 @@ URL-REGEX,^https:\/\/(?!errlog).+\.umeng\.com,REJECT-DICT
 URL-REGEX,^https:\/\/errlog\.umeng\.com\/(?!(apm_logs|upload|api)),REJECT-TINYGIF
 
 # sogou
-URL-REGEX,^https:\/\/pb\d*\.sogou\.com\pv\.gif,REJECT-TINYGIF
+URL-REGEX,^https:\/\/pb\d*\.sogou\.com\/pv\.gif,REJECT-TINYGIF
 
 [Map Local]
 # umeng
