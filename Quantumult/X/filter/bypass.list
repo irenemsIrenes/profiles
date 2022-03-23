@@ -247,5 +247,8 @@ DOMAIN,zhanzhang.toutiao.com,REJECT
 DOMAIN-SUFFIX,uyunad.com,REJECT
 DOMAIN-SUFFIX,portal101.cn,REJECT
 DOMAIN,track.sohu.com,REJECT
+DOMAIN,fclick.baidu.com,REJECT
+DOMAIN,ada.baidu.com,REJECT
+DOMAIN,sp1.baidu.com,REJECT
 
 
