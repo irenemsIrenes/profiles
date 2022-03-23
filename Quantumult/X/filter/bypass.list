@@ -254,5 +254,7 @@ DOMAIN,stat.u.sb,REJECT
 DOMAIN-SUFFIX,rsb.net,REJECT
 DOMAIN,mon.snssdk.com,REJECT
 DOMAIN,xxbg.snssdk.com,REJECT
+DOMAIN-SUFFIX,mediav.com,REJECT
+DOMAIN,e.so.com,REJECT
 
 

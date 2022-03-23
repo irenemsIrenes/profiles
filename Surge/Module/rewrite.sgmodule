@@ -25,8 +25,6 @@ URL-REGEX,^http:\/\/server\.develsoftware\.com:8080\/(getinterstitialbanner|getb
 
 URL-REGEX,^https:\/\/api\.tophub\.fun\/(HotClick|GetAdData),REJECT
 
-URL-REGEX,^https:\/\/api\d*\.tophub\.app\/stat,REJECT
-
 URL-REGEX,^https?:\/\/api\.gaoqingdianshi\.com\/api\/ad,REJECT-TINYGIF
 URL-REGEX,^http:\/\/cdn\.gaoqingdiansh\.com\/assets\/mobile\/ios\/track_.*,REJECT
 
@@ -67,11 +65,21 @@ URL-REGEX,^https:\/\/errlog\.umeng\.com\/(?!(apm_logs|upload|api)),REJECT-TINYGI
 # sogou
 URL-REGEX,^https:\/\/pb\d*\.sogou\.com\/pv\.gif,REJECT-TINYGIF
 
+# douyin
+URL-REGEX,^https:\/\/mon.*\.amemv\.com,REJECT
+
+URL-REGEX,^https:\/\/aweme\.snssdk\.com\/aweme\/v\d+\/aweme\/stats\/,REJECT
+
 [Map Local]
 # umeng
 ^https:\/\/errlog\.umeng\.com\/apm_logs data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/umeng-apm_logs.json"
+
 ^https:\/\/errlog\.umeng\.com\/upload data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/umeng-upload.txt"
+
 ^https:\/\/errlog\.umeng\.com\/api\/ data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/umeng-api.txt"
+
+# tophub.app/stat
+^https:\/\/api\d*\.tophub\.app\/stat data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/tophub-app-stat.json"
 
 
 [Script]
@@ -90,7 +98,7 @@ tieba1 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/f\/getFrsD
 tieba2 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/p\/getPbData,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/tieba-getPbData.js
 
 [MITM]
-hostname = %APPEND% sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.tophub.fun,*.51wnl-cq.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app
+hostname = %APPEND% sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.tophub.fun,*.51wnl-cq.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.amemv.com,*.snssdk.com
 
 
 
