@@ -206,3 +206,5 @@
 0.0.0.0 xxbg.snssdk.com
 ||mediav.com^
 0.0.0.0 e.so.com
+||trace.qq.com^
+||btrace.qq.com^
