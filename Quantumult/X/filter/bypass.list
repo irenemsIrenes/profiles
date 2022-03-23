@@ -252,4 +252,7 @@ DOMAIN,ada.baidu.com,REJECT
 DOMAIN,sp1.baidu.com,REJECT
 DOMAIN,stat.u.sb,REJECT
 DOMAIN-SUFFIX,rsb.net,REJECT
+DOMAIN,mon.snssdk.com,REJECT
+DOMAIN,xxbg.snssdk.com,REJECT
+
 
