@@ -202,3 +202,5 @@
 0.0.0.0 sp1.baidu.com
 0.0.0.0 stat.u.sb
 ||rsb.net^
+0.0.0.0 mon.snssdk.com
+0.0.0.0 xxbg.snssdk.com
