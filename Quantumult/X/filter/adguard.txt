@@ -208,3 +208,15 @@
 0.0.0.0 e.so.com
 ||trace.qq.com^
 ||btrace.qq.com^
+0.0.0.0 eclick.baidu.com
+||25ku.com^
+||u7u9.com^
+0.0.0.0 em.baidu.com
+||jituofuture.com^
+||weibopie.com^
+0.0.0.0 mixers.sina.cn
+0.0.0.0 gk.sina.cn
+0.0.0.0 cmmt.sina.cn
+||qchannel03.cn^
+0.0.0.0 pluto.sina.cn
+0.0.0.0 mfejs.sina.cn
