@@ -259,5 +259,17 @@ DOMAIN,e.so.com,REJECT
 DOMAIN-SUFFIX,trace.qq.com,REJECT
 DOMAIN-SUFFIX,btrace.qq.com,REJECT
 DONAIN-SUFFIX,btrace.video.qq.com,REJECT
+DOMAIN,eclick.baidu.com,REJECT
+DOMAIN-SUFFIX,25ku.com,REJECT
+DOMAIN-SUFFIX,u7u9.com,REJECT
+DOMAIN,em.baidu.com,REJECT
+DOMAIN-SUFFIX,jituofuture.com,REJECT
+DOMAIN-SUFFIX,weibopie.com,REJECT
+DOMAIN,mixers.sina.cn,REJECT
+DOMAIN,gk.sina.cn,REJECT
+DOMAIN,cmmt.sina.cn,REJECT
+DOMAIN-SUFFIX,qchannel03.cn,REJECT
+DOMAIN,pluto.sina.cn,REJECT
+DOMAIN,mfejs.sina.cn,REJECT
 
 
