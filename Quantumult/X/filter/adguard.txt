@@ -204,3 +204,5 @@
 ||rsb.net^
 0.0.0.0 mon.snssdk.com
 0.0.0.0 xxbg.snssdk.com
+||mediav.com^
+0.0.0.0 e.so.com
