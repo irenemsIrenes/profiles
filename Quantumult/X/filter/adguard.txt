@@ -200,3 +200,4 @@
 0.0.0.0 fclick.baidu.com
 0.0.0.0 ada.baidu.com
 0.0.0.0 sp1.baidu.com
+0.0.0.0 stat.u.sb
