@@ -256,5 +256,8 @@ DOMAIN,mon.snssdk.com,REJECT
 DOMAIN,xxbg.snssdk.com,REJECT
 DOMAIN-SUFFIX,mediav.com,REJECT
 DOMAIN,e.so.com,REJECT
+DOMAIN-SUFFIX,trace.qq.com,REJECT
+DOMAIN-SUFFIX,btrace.qq.com,REJECT
+DONAIN-SUFFIX,btrace.video.qq.com,REJECT
 
 
