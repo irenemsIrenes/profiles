@@ -274,4 +274,5 @@ DOMAIN-SUFFIX,qchannel03.cn,REJECT
 DOMAIN,pluto.sina.cn,REJECT
 DOMAIN,mfejs.sina.cn,REJECT
 DOMAIN,mjs.sinaimg.cn,REJECT
-
+DOMAIN,stat.myzaker.com,REJECT
+DOMAIN,bgstat.myzaker.com,REJECT
