@@ -216,8 +216,9 @@
 ||jituofuture.com^
 ||weibopie.com^
 0.0.0.0 mixers.sina.cn
+0.0.0.0 mixern.sina.cn
 0.0.0.0 gk.sina.cn
-0.0.0.0 cmmt.sina.cn
+0.0.0.0 cmnt.sina.cn
 ||qchannel03.cn^
 0.0.0.0 pluto.sina.cn
 0.0.0.0 mfejs.sina.cn
