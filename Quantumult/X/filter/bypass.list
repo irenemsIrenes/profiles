@@ -258,7 +258,7 @@ DOMAIN-SUFFIX,mediav.com,REJECT
 DOMAIN,e.so.com,REJECT
 DOMAIN-SUFFIX,trace.qq.com,REJECT
 DOMAIN-SUFFIX,btrace.qq.com,REJECT
-DONAIN-SUFFIX,btrace.video.qq.com,REJECT
+DOMAIN-SUFFIX,btrace.video.qq.com,REJECT
 DOMAIN,eclick.baidu.com,REJECT
 DOMAIN-SUFFIX,25ku.com,REJECT
 DOMAIN-SUFFIX,u7u9.com,REJECT
