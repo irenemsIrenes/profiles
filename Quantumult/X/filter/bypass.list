@@ -275,3 +275,5 @@ DOMAIN,pluto.sina.cn,REJECT
 DOMAIN,mfejs.sina.cn,REJECT
 DOMAIN,stat.myzaker.com,REJECT
 DOMAIN,bgstat.myzaker.com,REJECT
+DOMAIN-SUFFIX,51.la,REJECT
+DOMAIN-SUFFIX,ibruce.info,REJECT
