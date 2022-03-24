@@ -267,6 +267,7 @@ DOMAIN-SUFFIX,jituofuture.com,REJECT
 DOMAIN-SUFFIX,weibopie.com,REJECT
 DOMAIN,mixers.sina.cn,REJECT
 DOMAIN,mixern.sina.cn,REJECT
+DOMAIN,mixer.sina.cn,REJECT
 DOMAIN,gk.sina.cn,REJECT
 DOMAIN,cmnt.sina.cn,REJECT
 DOMAIN-SUFFIX,qchannel03.cn,REJECT
