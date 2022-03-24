@@ -54,6 +54,8 @@ URL-REGEX,^https:\/\/www\.zhihu\.com\/zbst\/events,REJECT
 
 # weibo
 URL-REGEX,^https:\/\/m\.weibo\.cn\/h5logs\/actionLog,REJECT
+URL-REGEX,^https:\/\/.+\.sina\.cn\/check,REJECT
+
 
 # smzdm
 URL-REGEX,^https:\/\/analytics-api(-\d+)?\.smzdm\.com,REJECT-TINYGIF
@@ -98,7 +100,7 @@ tieba1 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/f\/getFrsD
 tieba2 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/p\/getPbData,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/tieba-getPbData.js
 
 [MITM]
-hostname = %APPEND% sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.tophub.fun,*.51wnl-cq.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.amemv.com,*.snssdk.com
+hostname = %APPEND% sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.tophub.fun,*.51wnl-cq.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.amemv.com,*.snssdk.com, *.sina.cn
 
 
 
