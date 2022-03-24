@@ -223,3 +223,4 @@
 ||qchannel03.cn^
 0.0.0.0 pluto.sina.cn
 0.0.0.0 mfejs.sina.cn
+0.0.0.0 mjs.sinaimg.cn
