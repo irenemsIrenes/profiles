@@ -217,6 +217,7 @@
 ||weibopie.com^
 0.0.0.0 mixers.sina.cn
 0.0.0.0 mixern.sina.cn
+0.0.0.0 mixer.sina.cn
 0.0.0.0 gk.sina.cn
 0.0.0.0 cmnt.sina.cn
 ||qchannel03.cn^
