@@ -225,3 +225,5 @@
 0.0.0.0 mfejs.sina.cn
 0.0.0.0 stat.myzaker.com
 0.0.0.0 bgstat.myzaker.com
+||51.la^
+||ibruce.info^
