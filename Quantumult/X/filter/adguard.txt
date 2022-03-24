@@ -227,3 +227,7 @@
 0.0.0.0 bgstat.myzaker.com
 ||51.la^
 ||ibruce.info^
+||go.sohu.com^
+0.0.0.0 fpb.sohu.com
+0.0.0.0 cis.sohu.com
+0.0.0.0 pv.sohu.com
