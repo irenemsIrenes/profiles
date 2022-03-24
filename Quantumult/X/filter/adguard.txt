@@ -208,6 +208,7 @@
 0.0.0.0 e.so.com
 ||trace.qq.com^
 ||btrace.qq.com^
+||btrace.video.qq.com^
 0.0.0.0 eclick.baidu.com
 ||25ku.com^
 ||u7u9.com^
