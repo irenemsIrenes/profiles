@@ -3,7 +3,7 @@
 #!system=ios
 
 [General]
-force-http-engine-hosts = %APPEND% cards.iqiyi.com
+force-http-engine-hosts = %APPEND% cards.iqiyi.com:443
 
 [Rule]
 # pinduoduo
