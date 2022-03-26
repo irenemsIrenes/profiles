@@ -2,6 +2,9 @@
 #!desc=rewrite
 #!system=ios
 
+[General]
+force-http-engine-hosts = %APPEND% cards.iqiyi.com
+
 [Rule]
 # pinduoduo
 URL-REGEX,^https?:\/\/.*\.pinduoduo\.com\/i\/toutiao,REJECT
@@ -99,8 +102,15 @@ tieba1 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/f\/getFrsD
 
 tieba2 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/p\/getPbData,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/tieba-getPbData.js
 
+iqiyi1 = type=http-response,pattern=^https:\/\/cards\.iqiyi\.com\/views_home\/.+/qy_home,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/qy_home.js
+
+iqiyi2 = type=http-response,pattern=^https:\/\/cards\.iqiyi\.com\/waterfall\/.+\/feed,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/qy_home.js
+
+iqiyi3 = type=http-response,pattern=^https:\/\/cards\.iqiyi\.com\/views_category\/.+\/category_home,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/qy_home.js
+
+
 [MITM]
-hostname = %APPEND% sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.tophub.fun,*.51wnl-cq.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.amemv.com,*.snssdk.com, *.sina.cn
+hostname = %APPEND% sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.tophub.fun,*.51wnl-cq.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.amemv.com,*.snssdk.com, *.sina.cn, cards.iqiyi.com
 
 
 
