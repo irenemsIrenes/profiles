@@ -2,8 +2,6 @@
 #!desc=rewrite
 #!system=ios
 
-[General]
-force-http-engine-hosts = %APPEND% cards.iqiyi.com:0
 
 [Rule]
 # pinduoduo
@@ -101,12 +99,6 @@ maimai = type=http-response,pattern=^https:\/\/open\.taou\.com\/maimai\/feed\/v\
 tieba1 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/f\/getFrsData,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/tieba-getFrsData.js
 
 tieba2 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/p\/getPbData,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/tieba-getPbData.js
-
-iqiyi1 = type=http-response,pattern=^https:\/\/cards\.iqiyi\.com\/views_home\/.+/qy_home,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/qy_home.js
-
-iqiyi2 = type=http-response,pattern=^https:\/\/cards\.iqiyi\.com\/waterfall\/.+\/feed,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/qy_home.js
-
-iqiyi3 = type=http-response,pattern=^https:\/\/cards\.iqiyi\.com\/views_category\/.+\/category_home,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/qy_home.js
 
 
 [MITM]
