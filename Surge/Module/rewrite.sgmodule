@@ -75,7 +75,7 @@ URL-REGEX,^https:\/\/aweme\.snssdk\.com\/aweme\/v\d+\/aweme\/stats\/,REJECT
 
 URL-REGEX,^https:\/\/mssdk\.snssdk\.com\/web\/report,REJECT
 
-URL-REGEX,^https:\/\/m\.toutiao\.com\/[^\/]+\/[^\/]+\/slow_info,REJECT
+URL-REGEX,^https:\/\/m\.toutiao\.com\/[^\/]+\/slow_info,REJECT
 
 
 
