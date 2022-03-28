@@ -84,6 +84,9 @@ URL-REGEX,^https:\/\/aweme\.snssdk\.com\/aweme\/v\d+\/aweme\/stats\/,REJECT
 # tophub.app/stat
 ^https:\/\/api\d*\.tophub\.app\/stat data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/tophub-app-stat.json"
 
+# toutiao
+^https:\/\/m\.toutiao\.com\/log\/event data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/toutiao-log-event.json"
+
 
 [Script]
 douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]\/((|follow\/|nearby\/)feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\?,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/douyin.js
@@ -102,7 +105,7 @@ tieba2 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/p\/getPbDa
 
 
 [MITM]
-hostname = %APPEND% sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.tophub.fun,*.51wnl-cq.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.amemv.com,*.snssdk.com, *.sina.cn
+hostname = %APPEND% m.toutiao.com, sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.tophub.fun,*.51wnl-cq.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.amemv.com,*.snssdk.com, *.sina.cn
 
 
 
