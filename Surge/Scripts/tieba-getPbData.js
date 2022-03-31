@@ -3,6 +3,7 @@ try {
     if (obj.data) {
         obj.data.asp_ad_list = []
         obj.data.banner_list = []
+        obj.data.banner_sug = []
 
     }
     $done({ body: JSON.stringify(obj) });
