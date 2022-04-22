@@ -125,7 +125,6 @@
 ||sdfp-va.byteoversea.com^
 ||adashx.m.taobao.com^
 ||dre8.com^
-||adsmind.gdtimg.com^
 ||adextra.51wnl-cq.com^
 ||log.51wnl-cq.com^
 ||ad.51wnl-cq.com^
