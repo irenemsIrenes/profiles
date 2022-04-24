@@ -280,4 +280,5 @@ DOMAIN-SUFFIX,go.sohu.com,REJECT
 DOMAIN,fpb.sohu.com,REJECT
 DOMAIN,cis.sohu.com,REJECT
 DOMAIN,pv.sohu.com,REJECT
+DOMAIN-SUFFIX,korgiejoinyou.com,REJECT
 
