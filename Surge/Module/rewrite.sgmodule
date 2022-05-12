@@ -94,6 +94,8 @@ URL-REGEX,^https:\/\/m\.toutiao\.com\/[^\/]+\/slow_info,REJECT
 # toutiao
 ^https:\/\/m\.toutiao\.com\/log\/event data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/toutiao-log-event.json"
 
+[Header Rewrite]
+http-request ^https://api.tophub.fun/mo/fish/ header-add Referer https://mo.fish/
 
 [Script]
 douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]\/((|follow\/|nearby\/)feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\?,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/douyin.js
