@@ -79,6 +79,7 @@ const nicknames = [
   ".+连锁",
   "(发|脸)型",
   "蛇|鼠",
+  "三只羊",
 ]
 
 // user custom verify
