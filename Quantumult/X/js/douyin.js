@@ -181,6 +181,7 @@ const signatureNames = [
   "(进口|豪|汽|追|看|改装)车",
   "投资",
   "资本",
+  "三只羊",
 ]
 
 // in the top of nickname 
