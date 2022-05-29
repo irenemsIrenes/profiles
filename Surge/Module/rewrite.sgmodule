@@ -17,10 +17,7 @@ URL-REGEX,^https:\/\/dot\.xinhuazhiyun\.com\/logserver\/,REJECT
 URL-REGEX,^https:\/\/handycam\.alicdn\.com\/,REJECT
 
 
-# 51 wnl
-URL-REGEX,^https?:\/\/configsys\.51wnl-cq\.com\/api\/config\/getinfos,REJECT
-URL-REGEX,^https?:\/\/.*\.51wnl-cq\.com\/api\/(.*Ad|News),REJECT-TINYGIF
-URL-REGEX,^https?:\/\/.*\.51wnl-cq\.com\/contentapi/api.+/.*Ad,REJECT
+
 
 URL-REGEX,^http:\/\/server\.develsoftware\.com:8080\/(getinterstitialbanner|getbanner|showbanner|getadsettings),REJECT-TINYGIF
 
@@ -114,7 +111,7 @@ tieba2 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/p\/getPbDa
 
 
 [MITM]
-hostname = %APPEND% m.toutiao.com, sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.tophub.fun,*.51wnl-cq.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.amemv.com,*.snssdk.com, *.sina.cn
+hostname = %APPEND% m.toutiao.com, sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.tophub.fun,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.amemv.com,*.snssdk.com, *.sina.cn
 
 
 
