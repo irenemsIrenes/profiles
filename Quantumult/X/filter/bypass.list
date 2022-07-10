@@ -281,4 +281,5 @@ DOMAIN,fpb.sohu.com,REJECT
 DOMAIN,cis.sohu.com,REJECT
 DOMAIN,pv.sohu.com,REJECT
 DOMAIN-SUFFIX,korgiejoinyou.com,REJECT
-
+DOMAIN,ztyumn.ifeng.com,REJECT
+DOMAIN,qcvf.ifeng.com,REJECT
