@@ -231,3 +231,5 @@
 0.0.0.0 cis.sohu.com
 0.0.0.0 pv.sohu.com
 ||korgiejoinyou.com^
+0.0.0.0 ztyumn.ifeng.com
+0.0.0.0 qcvf.ifeng.com
