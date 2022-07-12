@@ -66,6 +66,8 @@ URL-REGEX,^https:\/\/errlog\.umeng\.com\/(?!(apm_logs|upload|api)),REJECT-TINYGI
 # sogou
 URL-REGEX,^https:\/\/pb\d*\.sogou\.com\/pv\.gif,REJECT-TINYGIF
 
+URL-REGEX,^https:\/\/v\d+\.sohu\.com\/integration-api\/batch\/web\/get,REJECT
+
 # douyin
 URL-REGEX,^https:\/\/mon.*\.amemv\.com,REJECT
 
