@@ -283,3 +283,4 @@ DOMAIN-SUFFIX,korgiejoinyou.com,REJECT
 DOMAIN,ztyumn.ifeng.com,REJECT
 DOMAIN,qcvf.ifeng.com,REJECT
 DOMAIN-SUFFIX,nike.com,PROXY
+DOMAIN-SUFFIX,braze.com,PROXY
