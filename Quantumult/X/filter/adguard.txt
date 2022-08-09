@@ -233,3 +233,6 @@
 ||korgiejoinyou.com^
 0.0.0.0 ztyumn.ifeng.com
 0.0.0.0 qcvf.ifeng.com
+||herky.com.cn^
+||ouliglsu.space^
+||irzhrbf.cn^
