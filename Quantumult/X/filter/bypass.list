@@ -288,3 +288,4 @@ DOMAIN-SUFFIX,ouliglsu.space,REJECT
 DOMAIN-SUFFIX,irzhrbf.cn,REJECT
 DOMAIN-SUFFIX,vorlsblf.cyou,REJECT
 DOMAIN-SUFFIX,xiezhong.club,REJECT
+DOMAIN-SUFFIX,ads.tiktok.com,REJECT
