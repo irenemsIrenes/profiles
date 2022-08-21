@@ -239,3 +239,4 @@
 ||vorlsblf.cyou^
 ||xiezhong.club^
 ||ads.tiktok.com^
+0.0.0.0 improving.duckduckgo.com
