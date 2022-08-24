@@ -1,2 +1,3 @@
 DOMAIN-SUFFIX,gmail.com
-DOMAIN,mail.google.com
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleusercontent.com
