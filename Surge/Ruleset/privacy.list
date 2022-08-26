@@ -1,3 +1,6 @@
 DOMAIN-SUFFIX,gmail.com
 DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,office365.com
+DOMAIN,login.live.com
+DOMAIN-SUFFIX,office.com
