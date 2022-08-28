@@ -309,7 +309,7 @@ async function main() {
 		console.log(`${e.message}, ${e.stack}`)
 		// send error
 	} finally {
-		//console.log(response.body)
+		console.log(response.body)
 		$.done({
 			status: response.status,
 			headers: response.headers,
