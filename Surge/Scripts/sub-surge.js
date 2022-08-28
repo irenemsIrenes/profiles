@@ -115,8 +115,9 @@ function getSurgePatch() {
 	const result = new Promise((resolve, reject) => {
 		let patchesUrl = $.read(patchesUrlKey)
 		if (!patchesUrl) {
-			$.notify("Error", "sub.patches.url is not set", "")
+			$.notify("Error", "", "sub.patches.url is not set")
 			resolve(null)
+			return
 		}
 		$.info(`downloading sub patches ${patchesUrl}`)
 		$.request.get(patchesUrl, function(error, response, data){
@@ -124,7 +125,7 @@ function getSurgePatch() {
 
 			let status = error? 500: response.status || response.statusCode
 			if (error || status != 200) {
-				$.notify("Error", `failed to download ${patchesUrl}`, "")
+				$.notify("Error", "", `failed to download ${patchesUrl}`)
 
 				let lastPoliciesStr = $.read(patchesKey)
 				if (lastPoliciesStr) {
@@ -150,8 +151,9 @@ function downloadSub() {
 	const result = new Promise((resolve, reject) => {
 		let subUrl = $.read(subUrlKey)
 		if (!subUrl) {
-			$.notify("Error", "Subscribe url is not set", "")
+			$.notify("Error", "","Subscribe url is not set")
 			reject(new Error("Subscribe url is not set"))
+			return
 		}
 		/*let cache = $persistentStore.read(subUrl)
 		if (cache) {
@@ -163,7 +165,7 @@ function downloadSub() {
 
 			let status = error? 500: response.status || response.statusCode
 			if (error || status != 200) {
-				$.notify("Error", `failed to download ${subUrl}`, "")
+				$.notify("Error", "", `failed to download ${subUrl}`)
 				reject(new Error(`failed to download subscribe ${subUrl}`))
 			} else {
 				$.write(data, subUrl)
@@ -310,6 +312,11 @@ async function main() {
 		// send error
 	} finally {
 		// console.log(response.body)
+		console.log(`write body to key 'sub-surge.result'`)
+		$.write('sub-surge.result', response.body)
+		if (response.body.length <= 15) {
+			$.error("body length less than 15, may be invalid")
+		}
 		$.done({
 			status: response.status,
 			headers: response.headers,
