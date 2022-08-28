@@ -5,3 +5,5 @@ DOMAIN-SUFFIX,office365.com
 DOMAIN,login.live.com
 DOMAIN-SUFFIX,office.com
 DOMAIN-SUFFIX,mail.me.com
+DOMAIN-SUFFIX,microsoftonline.com
+DOMAIN-SUFFIX,github.com

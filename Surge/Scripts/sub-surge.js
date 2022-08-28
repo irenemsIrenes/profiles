@@ -1,3 +1,103 @@
+class PlatformAPI {
+	constructor(name="Sub-surge", debug=false) {
+		this.name = name
+		this.debug = debug
+		this.isSurge = typeof $httpClient !== 'undefined'
+		this.isNode = eval(`typeof process !== "undefined"`)
+		if (!this.isSurge && !this.isNode) {
+			throw new Error("Must run in Surge or Node environment")
+		}
+		this.persistentStore = {}
+		this.init()
+		this.request = this.isNode
+			? eval("require('request')")
+			: $httpClient;
+		this.argument = typeof $argument !== "undefined"? $argument : ""
+	}
+
+	init() {
+		this.node = (() => {
+			if (this.isNode) {
+				const fs = eval("require('fs')");
+				const os = eval("require('os')")
+				return {
+					fs,
+					os,
+				};
+			} else {
+				return null;
+			}
+		})();
+
+		if (this.isNode) {
+			let persistentStoreFile = this.node.os.homedir() + '/sub-surge.json';
+			if (this.node.fs.existsSync(persistentStoreFile)) {
+				this.persistentStore = JSON.parse(this.node.fs.readFileSync(persistentStoreFile));
+			} else {
+				this.persistentStore = {}
+			}
+		}
+
+	}
+
+	flush() {
+		let persistentStoreFile = this.node.os.homedir() + '/sub-surge.json';
+		this.node.fs.writeFileSync(
+			persistentStoreFile,
+			JSON.stringify(this.persistentStore, null, 2),
+			{ flag: 'w' },
+			(err) => console.log(err),
+		)
+	}
+
+	write(data, key) {
+		if (this.isSurge) {
+			$persistentStore.write(data, key)
+		} else {
+			this.persistentStore[key] = data
+			this.flush()
+		}
+	}
+
+	read(key) {
+		if (this.isSurge) {
+			return $persistentStore.read(key)
+		} else {
+			return this.persistentStore[key]
+		}
+	}
+
+	done(data = {}) {
+		if (this.isSurge) {
+			$done(data)
+		} else {
+			this.info(JSON.stringify(data))
+		}
+	}
+
+	log(msg) {
+		if (this.debug) console.log(`[${this.name}] LOG: ${msg}`);
+	}
+
+	info(msg) {
+		console.log(`[${this.name}] INFO: ${msg}`);
+	}
+
+	error(msg) {
+		console.log(`[${this.name}] ERROR: ${msg}`);
+	}
+
+	notify(title, subTitle, body) {
+		if (this.isSurge) {
+			$notification.post(title, subTitle, body)
+		} else {
+			this.info(`${title} -- ${subTitle} --${body}`)
+		}
+	}
+}
+
+const $ = new PlatformAPI();
+
 
 function getSurgePatch() {
 	/*
@@ -7,44 +107,66 @@ function getSurgePatch() {
 			]
 		}
 	 */
-	const patchesKey = 'sub.patches'
-	console.log($response.body)
-	try {
-		let obj = JSON.parse($response.body)
-		$persistentStore.write($response.body, patchesKey)
-		return obj
 
-	} catch (e) {
-		console.log(`error to parse policies data: ${$response.body} ${e.message}`)
-	}
-	let lastPoliciesStr = $persistentStore.read(patchesKey)
-	if (lastPoliciesStr) {
-		return JSON.parse(lastPoliciesStr)
-	}
-	return null
+
+	const patchesKey = 'sub.patches'
+	const patchesUrlKey = 'sub.patches.url'
+
+	const result = new Promise((resolve, reject) => {
+		let patchesUrl = $.read(patchesUrlKey)
+		if (!patchesUrl) {
+			$.notify("Error", "sub.patches.url is not set", "")
+			resolve(null)
+		}
+		$.info(`downloading sub patches ${patchesUrl}`)
+		$.request.get(patchesUrl, function(error, response, data){
+			console.log(`error=${error},response=${JSON.stringify(response)}`)
+
+			let status = error? 500: response.status || response.statusCode
+			if (error || status != 200) {
+				$.notify("Error", `failed to download ${patchesUrl}`, "")
+
+				let lastPoliciesStr = $.read(patchesKey)
+				if (lastPoliciesStr) {
+					$.info("loaded patch from cache")
+					resolve(JSON.parse(lastPoliciesStr))
+				} else {
+					resolve(null)
+				}
+
+			}  else {
+				$.write(data, patchesKey)
+				resolve(JSON.parse(data))
+			}
+		})
+
+	})
+	return result
 }
 
 function downloadSub() {
 	const subUrlKey = 'sub.url'
-	
 
 	const result = new Promise((resolve, reject) => {
-		let subUrl = $persistentStore.read(subUrlKey)
+		let subUrl = $.read(subUrlKey)
 		if (!subUrl) {
+			$.notify("Error", "Subscribe url is not set", "")
 			reject(new Error("Subscribe url is not set"))
 		}
 		/*let cache = $persistentStore.read(subUrl)
 		if (cache) {
 			 resolve(cache)
 		}*/
+		$.info(`downloading subscribe ${subUrl}`)
+		$.request.get(subUrl, function(error, response, data){
+			console.log(`error=${error},response=${JSON.stringify(response)}`)
 
-		$httpClient.get(subUrl, function(error, response, data){
-			if (error) {
-				reject(new Error(error))
-			} else if (response.status != 200) {
-				reject(new Error(`Failed to download ${subUrl}, code: ${response.status}, response: ${data}`))
+			let status = error? 500: response.status || response.statusCode
+			if (error || status != 200) {
+				$.notify("Error", `failed to download ${subUrl}`, "")
+				reject(new Error(`failed to download subscribe ${subUrl}`))
 			} else {
-				//$persistentStore.write(data, subUrl)
+				$.write(data, subUrl)
 				resolve(data)
 			}
 
@@ -155,11 +277,11 @@ function patchSub(subStr, patches) {
 }
 
 async function main() {
-	let patches = getSurgePatch()
-	console.log(patches)
-	let confName = $argument
+	let patches = await getSurgePatch()
+	$.info("patches downloaded")
+	let confName = $.argument
 	if (confName == null || confName.length == 0) {
-		 confName = "sub-patched.conf"
+		confName = "sub-patched.conf"
 	}
 	console.log(`confName=${confName}`)
 
@@ -184,10 +306,11 @@ async function main() {
 		response.status = 200
 
 	} catch (e) {
-		console.log(`error to download subscribe: ${e.message}, ${e.stack}`)
+		console.log(`${e.message}, ${e.stack}`)
 		// send error
 	} finally {
-		$done({
+		//console.log(response.body)
+		$.done({
 			status: response.status,
 			headers: response.headers,
 			body: response.body,
@@ -195,4 +318,8 @@ async function main() {
 	}
 }
 
-main()
+if ($.isSurge) {
+	main()
+} else if ($.isNode) {
+	module.exports = {$}
+}
