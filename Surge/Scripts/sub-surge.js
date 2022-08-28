@@ -313,7 +313,7 @@ async function main() {
 	} finally {
 		// console.log(response.body)
 		console.log(`write body to key 'sub-surge.result'`)
-		$.write('sub-surge.result', response.body)
+		$.write(response.body, 'sub-surge.result')
 		if (response.body.length <= 15) {
 			$.error("body length less than 15, may be invalid")
 		}
