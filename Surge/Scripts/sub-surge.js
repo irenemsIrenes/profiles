@@ -155,10 +155,16 @@ function downloadSub() {
 			reject(new Error("Subscribe url is not set"))
 			return
 		}
-		/*let cache = $persistentStore.read(subUrl)
-		if (cache) {
-			 resolve(cache)
-		}*/
+		if ($.isNode) {
+			$.info("Node ENV reading from cache")
+			let cache = $.read(subUrl)
+			if (cache) {
+				resolve(cache)
+				$.info("Node ENV read from cache")
+				return
+			}
+		}
+
 		$.info(`downloading subscribe ${subUrl}`)
 		$.request.get(subUrl, function(error, response, data){
 			console.log(`error=${error},response=${JSON.stringify(response)}`)
@@ -184,8 +190,7 @@ function parseCfg(subStr) {
 		"name": "",
 		"data": []
 	}
-	for (let i in rawLines) {
-		let line = rawLines[i]
+	for (let line of rawLines) {
 		let trimmedLine = line.trim()
 		if (/^\[[^\[\]]+\]$/i.test(trimmedLine)) {
 			console.log(trimmedLine)
@@ -203,11 +208,10 @@ function parseCfg(subStr) {
 
 function getAllConfKeys(parsedLines, name) {
 	let cfgKeys = []
-	for (let k in parsedLines) {
-		let cfg = parsedLines[k]
+	for (let cfg of parsedLines) {
 		if (cfg.name == name) {
-			for (let i in cfg.data) {
-				let line = cfg.data[i].trim()
+			for (let line of cfg.data) {
+				line = line.trim()
 				if (line.startsWith("#") || line.startsWith("//") || line.startsWith("/*")) {
 					continue
 				}
@@ -226,8 +230,7 @@ function getAllConfKeys(parsedLines, name) {
 }
 
 function getConf(parsedLines, name) {
-	for (let i in parsedLines) {
-		let cfg = parsedLines[i]
+	for (let cfg of parsedLines) {
 		if (cfg.name == name) {
 			return cfg
 		}
@@ -248,8 +251,7 @@ function patchRuleSets(parsedLines, ruleSets) {
 		return parsedLines
 	}
 	let newRuleSets = []
-	for (let i in ruleSets) {
-		let ruleSet = ruleSets[i]
+	for (let ruleSet of ruleSets) {
 		newRuleSets.push(`RULE-SET,${ruleSet.url},${ruleSet.policy}`)
 		if (!policyNames.includes(ruleSet.policy)) {
 			policyNames.push(ruleSet.policy)
@@ -269,9 +271,8 @@ function patchSub(subStr, patches) {
 
 	parsedLines = patchRuleSets(parsedLines, patches.ruleSets)
 
-	let lines = [`#!MANAGED-CONFIG ${$request.url} interval=86400 strict=true\n`]
-	for (let i in parsedLines) {
-		let parsedLine = parsedLines[i]
+	let lines = [`#!MANAGED-CONFIG ${$.request.url} interval=86400 strict=true\n`]
+	for (let parsedLine of parsedLines) {
 		lines.push(parsedLine.name)
 		lines = lines.concat(parsedLine.data)
 	}
@@ -328,5 +329,5 @@ async function main() {
 if ($.isSurge) {
 	main()
 } else if ($.isNode) {
-	module.exports = {$}
+	module.exports = {$, main}
 }
