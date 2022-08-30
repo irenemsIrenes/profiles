@@ -292,3 +292,4 @@ DOMAIN-SUFFIX,ads.tiktok.com,REJECT
 DOMAIN,improving.duckduckgo.com,REJECT
 DOMAIN-SUFFIX,5hte21mz.com,REJECT
 DOMAIN-SUFFIX,vps.hosting,DIRECT
+DOMAIN-SUFFIX,v.ps,DIRECT
