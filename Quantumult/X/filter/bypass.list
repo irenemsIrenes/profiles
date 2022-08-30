@@ -291,3 +291,4 @@ DOMAIN-SUFFIX,xiezhong.club,REJECT
 DOMAIN-SUFFIX,ads.tiktok.com,REJECT
 DOMAIN,improving.duckduckgo.com,REJECT
 DOMAIN-SUFFIX,5hte21mz.com,REJECT
+DOMAIN-SUFFIX,vps.hosting,DIRECT
