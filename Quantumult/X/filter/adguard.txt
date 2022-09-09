@@ -241,3 +241,7 @@
 ||ads.tiktok.com^
 0.0.0.0 improving.duckduckgo.com
 ||5hte21mz.com^
+||whhnkj.com^
+||zb7b.top^
+||nwogldc.top^
+||lxqwed.top^
