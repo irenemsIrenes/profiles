@@ -100,7 +100,7 @@ class PlatformAPI {
 const $ = new PlatformAPI();
 
 
-function getSurgePatch() {
+function getRemoteSurgePatch() {
 	/*
 		{
 			"ruleSets": [
@@ -144,6 +144,18 @@ function getSurgePatch() {
 
 	})
 	return result
+}
+
+
+async function getSurgePatch() {
+	let remotePatches = await getRemoteSurgePatch()
+	const localPatchKey = 'sub.local.patches'
+	let localPatchesStr = $.read(localPatchKey)
+	if (localPatchesStr) {
+		let localPatches = JSON.parse(localPatchesStr)
+		return Object.assign(remotePatches, localPatches)
+	}
+	return remotePatches
 }
 
 function downloadSub() {
@@ -264,11 +276,64 @@ function patchRuleSets(parsedLines, ruleSets) {
 	return parsedLines
 }
 
+function patchServers(parsedLines, servers) {
+	if (!servers) {
+		$.info("no severs to patch")
+		return parsedLines
+	}
+	let proxies = getConf(parsedLines, '[Proxy]')
+	if (!proxies) {
+		$.error("failed to find [Proxy]")
+		return parsedLines
+	}
+
+	$.info("start to patch servers")
+	let serverNames = []
+
+	for (let server of servers) {
+		serverNames.push(server.name)
+		proxies.data.push(`${server.name} = ${server.config}`)
+	}
+
+	$.info("start to patch policy group")
+
+	let policyGroup = getConf(parsedLines, '[Proxy Group]')
+
+	if (!policyGroup) {
+		$.error("[Proxy Group] found")
+		return parsedLines
+	}
+
+	let newPolicyServers = serverNames.join(', ')
+	for (let i = 0; i < policyGroup.data.length; i++) {
+		let policy = policyGroup.data[i]
+		let nameData = policy.split("=")
+		if (nameData.length != 2) {
+			$.error(`invalid policy group line ${policy}`)
+			continue
+		}
+
+		let policyName = nameData[0].trim()
+		if (policyName == 'Auto - UrlTest') {
+			// do nothing
+
+		} else if (policyName == 'AdBlock') {
+			// do nothing
+		} else {
+			// append
+			policyGroup.data[i] = `${policyGroup.data[i]}, ${newPolicyServers}`
+		}
+	}
+	return parsedLines
+}
+
 function patchSub(subStr, patches) {
 	if (!patches) {
 		return subStr
 	}
 	let parsedLines = parseCfg(subStr)
+
+	parsedLines = patchServers(parsedLines, patches.servers)
 
 	parsedLines = patchRuleSets(parsedLines, patches.ruleSets)
 
@@ -332,3 +397,4 @@ if ($.isSurge) {
 } else if ($.isNode) {
 	module.exports = {$, main}
 }
+
