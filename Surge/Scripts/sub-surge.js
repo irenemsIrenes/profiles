@@ -321,7 +321,7 @@ function patchServers(parsedLines, servers) {
 			// do nothing
 		} else {
 			// append
-			policyGroup.data[i] = `${policyGroup.data[i]}, ${newPolicyServers}`
+			policyGroup.data[i] = `${policyGroup.data[i].trim()}, ${newPolicyServers}`
 		}
 	}
 	return parsedLines
