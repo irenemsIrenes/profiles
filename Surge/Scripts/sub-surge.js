@@ -337,7 +337,7 @@ function patchSub(subStr, patches) {
 
 	parsedLines = patchRuleSets(parsedLines, patches.ruleSets)
 
-	let lines = [`#!MANAGED-CONFIG ${$.requestUrl} interval=86400 strict=true\n`]
+	let lines = [`#!MANAGED-CONFIG ${$.requestUrl} interval=86400 strict=false\n`]
 	for (let parsedLine of parsedLines) {
 		lines.push(parsedLine.name)
 		lines = lines.concat(parsedLine.data)
