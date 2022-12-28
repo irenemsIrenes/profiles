@@ -13,10 +13,10 @@ URL-REGEX,^https?:\/\/x?log.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.
 
 
 [URL Rewrite]
-^https?:\/\/api.*\.amemv\.com\/aweme\/v\d\/((|follow\/|nearby\/)feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\? https://aweme.snssdk.com/aweme/v1/((|follow\/|nearby\/)feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\? header
+^https?:\/\/api.*\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\? https://aweme.snssdk.com/aweme/v1/(feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\? header
 
 [Script]
-douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]\/((|follow\/|nearby\/)feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\?,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/douyin.js
+douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]\/(feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\?,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/douyin.js
 
 [MITM]
 hostname = %APPEND% *.amemv.com, *.snssdk.com, *.tiktokv.com, *.musical.ly
