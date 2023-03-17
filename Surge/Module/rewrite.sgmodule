@@ -80,6 +80,9 @@ URL-REGEX,^https:\/\/m\.toutiao\.com\/[^\/]+\/slow_info,REJECT
 
 URL-REGEX,^https:\/\/cdn\.web\.chelaileapp\.cn\/api\/adpub,REJECT
 
+URL-REGEX,^https://improving\.duckduckgo\.com/,REJECT-TINYGIF
+
+
 
 [Map Local]
 # umeng
@@ -117,7 +120,7 @@ zhidao1 = type=http-response,pattern=^https:\/\/zhidao\.baidu\.com\/mobile\/ajax
 
 
 [MITM]
-hostname = %APPEND% m.toutiao.com, sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.tophub.fun,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.amemv.com,*.snssdk.com, *.sina.cn,*.sohu.com,cdn.web.chelaileapp.cn,zhidao.baidu.com
+hostname = %APPEND% m.toutiao.com, sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.tophub.fun,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.amemv.com,*.snssdk.com, *.sina.cn,*.sohu.com,cdn.web.chelaileapp.cn,zhidao.baidu.com,improving.duckduckgo.com
 
 
 
