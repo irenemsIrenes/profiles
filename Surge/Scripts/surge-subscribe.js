@@ -4,7 +4,7 @@
 
 var key = CryptoJS.enc.Hex.parse($persistentStore.read("ENCRYPTION_KEY"));
 
-var iv = CryptoJS.enc.Hex.parse($persistentStore.read("ENCRYPTION_KEY_IV"));
+var iv = CryptoJS.enc.Hex.parse($response.headers["Encrypted-iv"]);
 
 
 var bytes  = CryptoJS.AES.decrypt($response.body, key,  {
