@@ -3,14 +3,13 @@
 
 [General]
 ipv6 = true
-tls-provider = openssl
 always-real-ip = msftconnecttest.com, msftncsi.com, *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn, *.battle.net
 geoip-maxmind-url = https://raw.githubusercontent.com/JMVoid/ipip2mmdb/release/Country.mmdb
 dns-server = 119.29.29.29,8.8.8.8
 doh-server = https://dns.alidns.com/dns-query,https://dns.google/dns-query,https://doh.pub/dns-query
 wifi-assist = false
 all-hybrid = false
-h2 = true
+
 
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/reject.list,Reject
@@ -31,6 +30,6 @@ DOMAIN-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/
 
 # Hijacking 运营商劫持或恶意网站
 RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list,Reject
-IP-CIDR,0.0.0.0/32,REJECT
+IP-CIDR,0.0.0.0/32,REJECT,no-resolve
 
 
