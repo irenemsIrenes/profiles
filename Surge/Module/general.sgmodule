@@ -10,7 +10,7 @@ doh-server = https://dns.alidns.com/dns-query,https://dns.google/dns-query,https
 wifi-assist = false
 all-hybrid = false
 allow-hotspot-access=true
-
+skip-proxy = %APPEND% jun.de
 
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/reject.list,Reject
