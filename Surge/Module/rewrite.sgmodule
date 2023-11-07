@@ -99,10 +99,9 @@ URL-REGEX,^https://improving\.duckduckgo\.com/,REJECT-TINYGIF
 ^https:\/\/m\.toutiao\.com\/log\/event data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/toutiao-log-event.json"
 
 [Header Rewrite]
-http-request ^https://api.tophub.fun/mo/fish/ header-add Referer https://mo.fish/
+
 
 [Script]
-douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]\/((|follow\/|nearby\/)feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\?,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/douyin.js
 
 xigua = type=http-response,pattern=^https:\/\/.*\.(snssdk\.com|amemv\.com|ixigua\.com)\/video\/app\/stream\/,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/xigua.js
 
@@ -120,7 +119,7 @@ zhidao1 = type=http-response,pattern=^https:\/\/zhidao\.baidu\.com\/mobile\/ajax
 
 
 [MITM]
-hostname = %APPEND% m.toutiao.com, sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.tophub.fun,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.amemv.com,*.snssdk.com, *.sina.cn,*.sohu.com,cdn.web.chelaileapp.cn,zhidao.baidu.com,improving.duckduckgo.com
+hostname = %APPEND% m.toutiao.com, sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.sina.cn,*.sohu.com,cdn.web.chelaileapp.cn,zhidao.baidu.com,improving.duckduckgo.com
 
 
 
