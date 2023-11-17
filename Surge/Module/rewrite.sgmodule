@@ -16,7 +16,7 @@ URL-REGEX,^https?:\/\/hydra\.alibaba\.com\/usertrack_,REJECT
 URL-REGEX,^https:\/\/dot\.xinhuazhiyun\.com\/logserver\/,REJECT
 URL-REGEX,^https:\/\/handycam\.alicdn\.com\/,REJECT
 
-
+DOMAIN-KEYWORD, pangolin-sdk-toutiao, REJECT
 
 
 URL-REGEX,^http:\/\/server\.develsoftware\.com:8080\/(getinterstitialbanner|getbanner|showbanner|getadsettings),REJECT-TINYGIF
