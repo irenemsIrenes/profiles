@@ -13,7 +13,7 @@ allow-hotspot-access=true
 skip-proxy = %APPEND% jun.de
 
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/reject.list,Reject
+RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/reject.list,Reject,extended-matching
 
 RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/proxy.list,Proxy
 
