@@ -60,7 +60,7 @@ URL-REGEX,^https:\/\/analytics-api(-\d+)?\.smzdm\.com,REJECT-TINYGIF
 
 # umeng
 URL-REGEX,^https:\/\/ulogs\.umeng\.com\/,REJECT-TINYGIF
-URL-REGEX,^https:\/\/(?!errlog).+\.umeng\.com,REJECT-DICT
+URL-REGEX,^https:\/\/(?!errlog).+\.umeng\.com,REJECT
 URL-REGEX,^https:\/\/errlog\.umeng\.com\/(?!(apm_logs|upload|api)),REJECT-TINYGIF
 
 # sogou
