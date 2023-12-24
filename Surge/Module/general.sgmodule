@@ -11,6 +11,7 @@ wifi-assist = false
 all-hybrid = false
 allow-hotspot-access=true
 skip-proxy = %APPEND% jun.de
+hijack-dns = %APPEND% 10.53.1.1:53,114.114.114.114:53
 
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/reject.list,Reject,extended-matching
