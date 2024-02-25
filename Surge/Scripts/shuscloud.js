@@ -16,7 +16,7 @@ if (url == null) {
                $notification.post("Shuscloud", data, "")
            } else {
                const used = info.data.traffic.limit*info.data.traffic.used
-               $notification.post("Shuscloud", `${new Date().toDateString()} Total ${info.data.traffic.limit} GB, used ${used.toPrecision(2)} GB`, "")
+               $notification.post(`Shuscloud ${new Date().toDateString()}`, `Total ${info.data.traffic.limit} GB, used ${used.toPrecision(2)} GB`, "")
            }
 
        }

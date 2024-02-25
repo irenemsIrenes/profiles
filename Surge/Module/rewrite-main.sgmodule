@@ -1,0 +1,6 @@
+#!name=rewrite main
+#!desc=rewrite main
+#!system=ios
+
+[Script]
+Shuscloud = type=cron,cronexp="0 9 * * *",script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/shuscloud.js
