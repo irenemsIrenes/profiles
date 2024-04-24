@@ -82,7 +82,12 @@ URL-REGEX,^https:\/\/cdn\.web\.chelaileapp\.cn\/api\/adpub,REJECT
 
 URL-REGEX,^https://improving\.duckduckgo\.com/,REJECT-TINYGIF
 
-
+URL-REGEX,^https?:\/\/mp\.weixin\.qq\.com\/mp\/wapcommreport,REJECT
+DOMAIN-SUFFIX,badjs.weixinbridge.com,REJECT
+URL-REGEX,^https?:\/\/mp\.weixin\.qq\.com\/mp\/jsmonitor,REJECT
+URL-REGEX,^https?:\/\/mp\.weixin\.qq\.com\/mp\/jsreport,REJECT
+URL-REGEX,^https?:\/\/mp\.weixin\.qq\.com\/mp\/advertisement_report,REJECT
+URL-REGEX,^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,REJECT
 
 [Map Local]
 # umeng
