@@ -28,7 +28,7 @@ if ($response.status !== 200) {
         padding: CryptoJS.pad.Pkcs7,
         iv: iv
     });
-    const originalText = bytes.toString(CryptoJS.enc.Utf8);
+    let originalText = bytes.toString(CryptoJS.enc.Utf8);
     if (pluginHosts === "true" || pluginHosts === true) {
         console.log("get the last line as plugin hosts")
         const dnsFlag = "\n# dns"
@@ -37,11 +37,11 @@ if ($response.status !== 200) {
             console.log(`no dns flag string "${dnsFlag}" found`)
         } else {
             const dnsStr = originalText.substring(index + dnsFlag.length)
-            console.log(dnsStr)
-            if (!$persistentStore.write("plugin-dns", dnsStr)) {
+            console.log(`${typeof dnsStr} == ${dnsStr}`)
+            if (!$persistentStore.write(dnsStr, "plugin-dns")) {
                 console.log("failed to save dns")
             }
-
+            originalText = originalText.substring(0, index)
         }
     }
 
