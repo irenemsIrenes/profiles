@@ -37,7 +37,10 @@ if ($response.status !== 200) {
             console.log(`no dns flag string "${dnsFlag}" found`)
         } else {
             const dnsStr = originalText.substring(index + dnsFlag.length)
-            $persistentStore.write("plugin-dns", dnsStr)
+            console.log(dnsStr)
+            if (!$persistentStore.write("plugin-dns", dnsStr)) {
+                console.log("failed to save dns")
+            }
 
         }
     }
