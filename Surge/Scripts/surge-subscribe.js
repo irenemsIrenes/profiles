@@ -38,9 +38,9 @@ if ($response.status !== 200) {
         } else {
             const dnsStr = originalText.substring(index + dnsFlag.length)
             console.log(`${typeof dnsStr} == ${dnsStr}`)
-            /*if (!$persistentStore.write(dnsStr, "plugin-dns")) {
+            if (!$persistentStore.write(dnsStr, "plugin-dns")) {
                 console.log("failed to save dns")
-            }*/
+            }
             originalText = originalText.substring(0, index)
         }
     }
