@@ -21,7 +21,7 @@ RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/R
 
 RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/direct.list,Direct,extended-matching
 
-
+DOMAIN-SUFFIX,dler.cloud, Auto - UrlTest
 IP-CIDR,0.0.0.0/32,REJECT,no-resolve
 
 
