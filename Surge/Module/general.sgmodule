@@ -11,7 +11,7 @@ doh-server = https://dns.alidns.com/dns-query,https://dns.google/dns-query,https
 wifi-assist = false
 all-hybrid = false
 allow-hotspot-access=true
-skip-proxy = %APPEND% jun.de
+skip-proxy = %APPEND% test.magicworldz.de
 hijack-dns = %APPEND% 10.53.1.1:53,114.114.114.114:53
 
 [Rule]
