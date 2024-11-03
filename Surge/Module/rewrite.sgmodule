@@ -91,6 +91,8 @@ URL-REGEX,^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,REJECT
 
 URL-REGEX,^https:\/\/mp\.weixin\.qq\.com\/tp\/datareport\/report,REJECT
 
+URL-REGEX, https:\/\/at\d+\.doubanio\.com\/,REJECT
+
 [Map Local]
 # umeng
 ^https:\/\/errlog\.umeng\.com\/apm_logs data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/umeng-apm_logs.json"
@@ -125,7 +127,7 @@ tieba2 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/p\/getPbDa
 zhidao1 = type=http-response,pattern=^https:\/\/zhidao\.baidu\.com\/mobile\/ajax\/getqbcontent,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/zhidao-getqbcontent.js
 
 [MITM]
-hostname = %APPEND% m.toutiao.com, sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.sina.cn,*.sohu.com,cdn.web.chelaileapp.cn,zhidao.baidu.com,improving.duckduckgo.com
+hostname = %APPEND% m.toutiao.com, sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.sina.cn,*.sohu.com,cdn.web.chelaileapp.cn,zhidao.baidu.com,improving.duckduckgo.com,at*.doubanio.com
 
 
 
