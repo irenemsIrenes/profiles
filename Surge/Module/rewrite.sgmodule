@@ -93,6 +93,11 @@ URL-REGEX,^https:\/\/mp\.weixin\.qq\.com\/tp\/datareport\/report,REJECT
 
 URL-REGEX, https:\/\/at\d+\.doubanio\.com\/,REJECT
 
+
+URL-REGEX,http:\/\/[^\/]+\/trace\/v\d+\?,REJECT
+URL-REGEX,http:\/\/[^\/]+\/psdk_param\?,REJECT
+
+
 [Map Local]
 # umeng
 ^https:\/\/errlog\.umeng\.com\/apm_logs data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/umeng-apm_logs.json"
