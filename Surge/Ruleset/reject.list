@@ -327,7 +327,7 @@ DOMAIN-SUFFIX,ads.heytapmobi.com
 DOMAIN-SUFFIX,ugsdk.cn
 DOMAIN-SUFFIX,dig.bdurl.net
 DOMAIN-SUFFIX,wtzw.com
-DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
+#DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
 DOMAIN-SUFFIX,timon.zijieapi.com    
 DOMAIN-SUFFIX,zejiexinxi.com
 DOMAIN-SUFFIX,ks-live.com
@@ -350,3 +350,10 @@ DOMAIN-SUFFIX,akamai.net
 DOMAIN-WILDCARD,mon*-misc-hl.amemv.com    
 DOMAIN-WILDCARD,frontier*-aweme-lf.amemv.com
 DOMAIN-WILDCARD,frontier*-toutiao-If.fqnovel.com
+DOMAIN-WILDCARD,log*-misc-lf.amemv.com
+DOMAIN-WILDCARD,at*.doubanio.com
+DOMAIN-WILDCARD,analytics-api*.smzdm.com
+DOMAIN-KEYWORD,pangolin-sdk-toutiao
+DOMAIN-WILDCARD,
+
+

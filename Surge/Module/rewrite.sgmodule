@@ -16,12 +16,8 @@ URL-REGEX,^https?:\/\/hydra\.alibaba\.com\/usertrack_,REJECT
 URL-REGEX,^https:\/\/dot\.xinhuazhiyun\.com\/logserver\/,REJECT
 URL-REGEX,^https:\/\/handycam\.alicdn\.com\/,REJECT
 
-DOMAIN-KEYWORD, pangolin-sdk-toutiao, REJECT,extended-matching
-
 
 URL-REGEX,^http:\/\/server\.develsoftware\.com:8080\/(getinterstitialbanner|getbanner|showbanner|getadsettings),REJECT-TINYGIF
-
-URL-REGEX,^https:\/\/api\.tophub\.fun\/(HotClick|GetAdData),REJECT
 
 URL-REGEX,^https?:\/\/api\.gaoqingdianshi\.com\/api\/ad,REJECT-TINYGIF
 URL-REGEX,^http:\/\/cdn\.gaoqingdiansh\.com\/assets\/mobile\/ios\/track_.*,REJECT
@@ -54,10 +50,6 @@ URL-REGEX,^https:\/\/www\.zhihu\.com\/zbst\/events,REJECT
 URL-REGEX,^https:\/\/m\.weibo\.cn\/h5logs\/actionLog,REJECT
 URL-REGEX,^https:\/\/.+\.sina\.cn\/check,REJECT
 
-
-# smzdm
-URL-REGEX,^https:\/\/analytics-api(-\d+)?\.smzdm\.com,REJECT-TINYGIF
-
 # umeng
 URL-REGEX,^https:\/\/ulogs\.umeng\.com\/,REJECT-TINYGIF
 URL-REGEX,^https:\/\/(?!errlog).+\.umeng\.com,REJECT
@@ -68,12 +60,6 @@ URL-REGEX,^https:\/\/pb\d*\.sogou\.com\/pv\.gif,REJECT-TINYGIF
 
 URL-REGEX,^https:\/\/v\d+\.sohu\.com\/integration-api\/batch\/web,REJECT
 
-# douyin
-URL-REGEX,^https:\/\/mon.*\.amemv\.com,REJECT
-
-URL-REGEX,^https:\/\/aweme\.snssdk\.com\/aweme\/v\d+\/aweme\/stats\/,REJECT
-
-URL-REGEX,^https:\/\/mssdk\.snssdk\.com\/web\/report,REJECT
 
 URL-REGEX,^https:\/\/m\.toutiao\.com\/[^\/]+\/slow_info,REJECT
 
@@ -90,9 +76,6 @@ URL-REGEX,^https?:\/\/mp\.weixin\.qq\.com\/mp\/advertisement_report,REJECT
 URL-REGEX,^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,REJECT
 
 URL-REGEX,^https:\/\/mp\.weixin\.qq\.com\/tp\/datareport\/report,REJECT
-
-URL-REGEX, https:\/\/at\d+\.doubanio\.com\/,REJECT
-
 
 
 [Map Local]
