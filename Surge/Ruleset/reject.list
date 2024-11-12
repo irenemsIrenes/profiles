@@ -346,4 +346,7 @@ DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,sealaly.net
 DOMAIN-SUFFIX,onethingpcs.com
 DOMAIN-SUFFIX,ndcpp.com
-
+DOMAIN-SUFFIX,akamai.net
+DOMAIN-WILDCARD,mon*-misc-hl.amemv.com    
+DOMAIN-WILDCARD,frontier*-aweme-lf.amemv.com
+DOMAIN-WILDCARD,frontier*-toutiao-If.fqnovel.com
