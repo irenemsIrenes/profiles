@@ -15,7 +15,7 @@ skip-proxy = %APPEND% test.magicworldz.de
 hijack-dns = %APPEND% 10.53.1.1:53,114.114.114.114:53
 
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/reject.list,Reject,extended-matching,pre-matching
+RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/reject.list,Reject-no-drop,extended-matching,pre-matching
 
 RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/proxy.list,Proxy,extended-matching
 

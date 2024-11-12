@@ -354,5 +354,5 @@ DOMAIN-WILDCARD,log*-misc-lf.amemv.com
 DOMAIN-WILDCARD,at*.doubanio.com
 DOMAIN-WILDCARD,analytics-api*.smzdm.com
 DOMAIN-KEYWORD,pangolin-sdk-toutiao
-
+DOMAIN-WILDCARD,log*-applog-hl.fqnovel.com
 
