@@ -1,0 +1,10 @@
+DOMAIN-WILDCARD,log*-applog-hl.fqnovel.com
+DOMAIN-WILDCARD,api*-normal-hl.amemv.com
+DOMAIN-WILDCARD,analytics-api*.smzdm.com
+DOMAIN-WILDCARD,mon*-misc-hl.amemv.com    
+DOMAIN-WILDCARD,frontier*-aweme-lf.amemv.com
+DOMAIN-WILDCARD,frontier*-toutiao-lf.fqnovel.com
+DOMAIN-WILDCARD,log*-misc-lf.amemv.com
+DOMAIN-SUFFIX,trace.qq.com
+DOMAIN-SUFFIX,btrace.qq.com
+DOMAIN-SUFFIX,btrace.video.qq.com
