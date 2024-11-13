@@ -8,3 +8,4 @@ DOMAIN-WILDCARD,log*-misc-lf.amemv.com
 DOMAIN-SUFFIX,trace.qq.com
 DOMAIN-SUFFIX,btrace.qq.com
 DOMAIN-SUFFIX,btrace.video.qq.com
+DOMAIN-KEYWORD,pangolin-sdk-toutiao

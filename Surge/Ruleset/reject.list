@@ -344,5 +344,4 @@ DOMAIN-SUFFIX,onethingpcs.com
 DOMAIN-SUFFIX,ndcpp.com
 DOMAIN-SUFFIX,akamai.net
 DOMAIN-WILDCARD,at*.doubanio.com
-DOMAIN-KEYWORD,pangolin-sdk-toutiao
 USER-AGENT,KCG-PD/*
