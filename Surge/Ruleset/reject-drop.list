@@ -13,3 +13,6 @@ DOMAIN-SUFFIX,zijieapi.com
 DOMAIN-SUFFIX,log.ireader.mobi
 DOMAIN-SUFFIX,log.ireaderm.net
 DOMAIN-SUFFIX,ctobsnssdk.com
+DOMAIN-WILDCARD,ec*-core-hl.ecombdapi.com
+DOMAIN-WILDCARD,ecom*-normal-hl.ecombdapi.com
+DOMAIN-SUFFIX,bytegecko.com
