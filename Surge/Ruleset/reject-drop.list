@@ -1,5 +1,6 @@
 DOMAIN-WILDCARD,log*-applog-hl.fqnovel.com
 DOMAIN-WILDCARD,api*-normal-hl.amemv.com
+DOMAIN-WILDCARD,api*-normal-c-hl.amemv.com
 DOMAIN-WILDCARD,analytics-api*.smzdm.com
 DOMAIN-WILDCARD,mon*-misc-hl.amemv.com    
 DOMAIN-WILDCARD,frontier*-aweme-lf.amemv.com
