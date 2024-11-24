@@ -101,7 +101,7 @@ xigua = type=http-response,pattern=^https:\/\/.*\.(snssdk\.com|amemv\.com|ixigua
 
 peopleapp = type=http-response,pattern=^https:\/\/app\.peopleapp\.com\/Api\/\d+\/HomeApi\/getContentList,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/people-news.js
 
-weibomobile = type=http-response,pattern=^https:\/\/m\.weibo\.cn\/api\/container\/getIndex,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/weibo-mobile.js
+#weibomobile = type=http-response,pattern=^https:\/\/m\.weibo\.cn\/api\/container\/getIndex,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/weibo-mobile.js
 
 maimai = type=http-response,pattern=^https:\/\/open\.taou\.com\/maimai\/feed\/v\d+\/(focus_feed|nd\d+feed),requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/maimai.js
 
