@@ -1,6 +1,7 @@
 DOMAIN-WILDCARD,log*-applog-hl.fqnovel.com
 DOMAIN-WILDCARD,api*-normal-hl.amemv.com
 DOMAIN-WILDCARD,api*-normal-c-hl.amemv.com
+DOMAIN-WILDCARD,search*-search-hl.amemv.com
 DOMAIN-WILDCARD,analytics-api*.smzdm.com
 DOMAIN-WILDCARD,mon*-misc-hl.amemv.com    
 DOMAIN-WILDCARD,frontier*-aweme-lf.amemv.com
@@ -34,5 +35,6 @@ DOMAIN-SUFFIX,gifshow.com
 DOMAIN,unet.quark.cn
 DOMAIN-SUFFIX,chinanetcenter.com
 DOMAIN-SUFFIX,fraudmetrix.cn
+DOMAIN-SUFFIX,jiguang.cn
 
 
