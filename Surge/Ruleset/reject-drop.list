@@ -38,5 +38,6 @@ DOMAIN-SUFFIX,fraudmetrix.cn
 DOMAIN-SUFFIX,jiguang.cn
 DOMAIN-SUFFIX,etoote.com
 DOMAIN-WILDCARD,webcast*-ws-c-lf.amemv.com
-
+DOMAIN,api-play-hl.amemv.com
+DOMAIN,content-open.douyin.com
 
