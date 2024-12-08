@@ -43,4 +43,5 @@ DOMAIN-WILDCARD,webcast*-core-hl.amemv.com
 DOMAIN-WILDCARD,webcast*-open-hl.douyin.com
 DOMAIN,content-open.douyin.com
 DOMAIN,channel-acs.m.taobao.com
-
+DOMAIN-SUFFIX,ifenglian.com
+DOMAIN-SUFFIX,sogaha.cn
