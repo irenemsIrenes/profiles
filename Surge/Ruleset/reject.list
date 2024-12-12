@@ -349,4 +349,5 @@ DOMAIN-WILDCARD,*.bi*.cc
 DOMAIN-WILDCARD,*.srsp*.cc
 DOMAIN-WILDCARD,*.cdn*.cc
 DOMAIN-SUFFIX,aizhantj.com
+DOMAIN,analytics.twitter.com
 
