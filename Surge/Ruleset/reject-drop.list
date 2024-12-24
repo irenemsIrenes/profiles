@@ -45,3 +45,4 @@ DOMAIN,content-open.douyin.com
 DOMAIN,channel-acs.m.taobao.com
 DOMAIN-SUFFIX,ifenglian.com
 DOMAIN-SUFFIX,sogaha.cn
+DOMAIN-WILDCARD,log*-misc-hl.amemv.com
