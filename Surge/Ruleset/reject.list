@@ -335,6 +335,7 @@ DOMAIN-SUFFIX,ndcpp.com
 DOMAIN-SUFFIX,akamai.net
 DOMAIN-WILDCARD,at*.doubanio.com
 USER-AGENT,KCG-PD/*
+USER-AGENT,ttplayer*
 DOMAIN-SUFFIX,vidoomy.com
 DOMAIN-SUFFIX,stickyadstv.com
 DOMAIN-SUFFIX,openx.net
