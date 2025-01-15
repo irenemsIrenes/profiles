@@ -46,3 +46,6 @@ DOMAIN,channel-acs.m.taobao.com
 DOMAIN-SUFFIX,ifenglian.com
 DOMAIN-SUFFIX,sogaha.cn
 DOMAIN-WILDCARD,log*-misc-hl.amemv.com
+DOMAIN-SUFFIX,pinduoduo.com
+DOMAIN,ichannel.snssdk.com
+DOMAIN,reading-hl.snssdk.com
