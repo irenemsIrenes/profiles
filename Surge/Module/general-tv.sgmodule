@@ -1,0 +1,8 @@
+#!name=General TV Configuration
+#!desc=general TV configuration
+
+
+[Rule]
+RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/reject-drop-tv.list,REJECT-DROP,extended-matching,pre-matching
+
+
