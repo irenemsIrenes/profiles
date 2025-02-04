@@ -1,6 +1,6 @@
 #!name=log
 #!desc=log level info
-
+#!category=Veda
 
 [General]
 loglevel = info

@@ -1,5 +1,6 @@
 #!name=General Configuration
 #!desc=general configuration
+#!category=Veda
 
 [General]
 ipv6 = true

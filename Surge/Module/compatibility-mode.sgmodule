@@ -1,5 +1,6 @@
 #!name=compatibility-mode
 #!desc=Tun only
+#!category=Veda
 
 [General]
 compatibility-mode = 3
