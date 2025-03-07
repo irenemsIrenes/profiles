@@ -10,3 +10,6 @@ PROTOCOL,UDP
 DOMAIN,api.touch-moblie.com
 DOMAIN-SUFFIX,zijieapi.com
 DOMAIN,applog-perf.uc.cn
+DOMAIN,dsp-x.jd.com
+DOMAIN,xlog.jd.com
+DOMAIN-SUFFIX,gdt.qq.com
