@@ -72,5 +72,8 @@ DOMAIN,portal-portm.meituan.com
 DOMAIN-WILDCARD,lx*.meituan.com
 DOMAIN,tte.meituan.com
 DOMAIN,logan.sankuai.com
+DOMAIN,dreport.meituan.net
+DOMAIN,httpdns.baidubce.com
+
 
 
