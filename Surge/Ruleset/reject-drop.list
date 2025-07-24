@@ -60,4 +60,15 @@ DOMAIN-SUFFIX,duxiaomanfintech.com
 DOMAIN-SUFFIX,pglstatp-toutiao.com
 DOMAIN-SUFFIX,miaozhen.com
 DOMAIN-SUFFIX,dxmpay.com
-    
+DOMAIN,data-sdk-uuid-log.d.meituan.net
+DOMAIN-SUFFIX,d.meituan.net
+DOMAIN,httpdnsmultiapivip.meituan.com
+DOMAIN,dnspod.meituan.httpdns.qcloud.com
+DOMAIN-SUFFIX,tec73.com
+DOMAIN,httpdnsmultiapi.meituan.com
+DOMAIN,tte.meituan.com
+DOMAIN-WILDCARD,cat*.dianping.com
+DOMAIN,portal-portm.meituan.com
+DOMAIN-WILDCARD,lx*.meituan.com
+DOMAIN,tte.meituan.com
+
