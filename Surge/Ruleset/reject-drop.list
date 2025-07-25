@@ -84,6 +84,8 @@ DOMAIN,mars.jd.com
 DOMAIN,ccc-x.jd.com
 DOMAIN,blackhole.m.jd.com
 DOMAIN,anti-sdk-report.m.jd.com
+DOMAIN-SUFFIX,jddebug.com
+DOMAIN,mllog.jd.com
 
 
 
