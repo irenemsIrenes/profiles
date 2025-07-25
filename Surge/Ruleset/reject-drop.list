@@ -80,6 +80,10 @@ DOMAIN,api-unionid.meituan.com
 DOMAIN,medusa.dianping.com
 DOMAIN,dpmtpush.dianping.com
 DOMAIN,mapi.dianping.com
+DOMAIN,mars.jd.com
+DOMAIN,ccc-x.jd.com
+DOMAIN,blackhole.m.jd.com
+DOMAIN,anti-sdk-report.m.jd.com
 
 
 
