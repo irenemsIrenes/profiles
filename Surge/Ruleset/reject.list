@@ -402,5 +402,6 @@ DOMAIN-SUFFIX,analytics.tiktok.com
 DOMAIN-SUFFIX,analytics-ipv6.tiktokw.us
 DOMAIN,w3-reporting.reddit.com
 DOMAIN,alb.reddit.com
+DOMAIN,gql-realtime.reddit.com
 
 
