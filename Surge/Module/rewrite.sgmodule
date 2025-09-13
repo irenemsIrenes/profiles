@@ -77,7 +77,7 @@ URL-REGEX,^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,REJECT
 
 URL-REGEX,^https:\/\/mp\.weixin\.qq\.com\/tp\/datareport\/report,REJECT
 
-URL-REGEX,^https:\/\/ip\.taobao\.com\/service\/getIpInfo\.php
+URL-REGEX,^https:\/\/ip\.taobao\.com\/service\/getIpInfo\.php,REJECT
 
 [Map Local]
 # umeng
