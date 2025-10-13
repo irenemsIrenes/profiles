@@ -68,8 +68,8 @@ DOMAIN-SUFFIX,tec73.com
 DOMAIN,httpdnsmultiapi.meituan.com
 DOMAIN,tte.meituan.com
 DOMAIN-WILDCARD,cat*.dianping.com
-DOMAIN,portal-portm.meituan.com
-DOMAIN-WILDCARD,lx*.meituan.com
+#DOMAIN,portal-portm.meituan.com
+#DOMAIN-WILDCARD,lx*.meituan.com
 DOMAIN,tte.meituan.com
 DOMAIN,logan.sankuai.com
 DOMAIN,dreport.meituan.net
