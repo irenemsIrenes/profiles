@@ -8,10 +8,7 @@ DOMAIN-SUFFIX,microsoftonline.com
 DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,ultramobile.com
 DOMAIN,login.windows.net
-DOMAIN-SUFFIX,mail.google.com
-DOMAIN,google.com
-DOMAIN,www.google.com
-DOMAIN,accounts.google.com
-DOMAIN,oauth2.googleapis.com
-DOMAIN,oauthaccountmanager.googleapis.com
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+
 
