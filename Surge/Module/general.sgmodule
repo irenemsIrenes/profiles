@@ -12,7 +12,6 @@ dns-server = 119.29.29.29,8.8.8.8
 doh-server = https://1.0.0.1/dns-query,https://1.1.1.1/dns-query,https://dns.alidns.com/dns-query,https://8.8.8.8/dns-query,https://doh.pub/dns-query
 wifi-assist = false
 all-hybrid = false
-allow-hotspot-access=true
 skip-proxy = %APPEND% test.magicworldz.de
 hijack-dns = %APPEND% 10.53.1.1:53,114.114.114.114:53
 
