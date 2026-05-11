@@ -10,5 +10,7 @@ DOMAIN-SUFFIX,ultramobile.com
 DOMAIN,login.windows.net
 DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,googleapis.com
-
-
+DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
