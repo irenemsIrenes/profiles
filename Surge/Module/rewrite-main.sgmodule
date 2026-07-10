@@ -4,4 +4,4 @@
 #!category=Veda
 
 [Script]
-Shuscloud = type=cron,cronexp="0 9 * * *",script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/shuscloud.js
+Shuscloud = type=cron,cronexp="0 9 * * *",script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/shuscloud.js

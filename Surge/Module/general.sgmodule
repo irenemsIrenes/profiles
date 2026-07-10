@@ -7,7 +7,7 @@ ipv6 = true
 ipv6-vif = true
 #encrypted-dns-follow-outbound-mode=true
 always-real-ip = msftconnecttest.com, msftncsi.com, *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn, *.battle.net
-geoip-maxmind-url = https://raw.githubusercontent.com/JMVoid/ipip2mmdb/release/Country.mmdb
+geoip-maxmind-url = https://cdn.jsdelivr.net/gh/JMVoid/ipip2mmdb@release/Country.mmdb
 dns-server = 119.29.29.29,8.8.8.8
 doh-server = https://1.0.0.1/dns-query,https://1.1.1.1/dns-query,https://dns.alidns.com/dns-query,https://8.8.8.8/dns-query,https://doh.pub/dns-query
 wifi-assist = false
@@ -16,13 +16,13 @@ skip-proxy = %APPEND% test.magicworldz.de
 hijack-dns = %APPEND% 10.53.1.1:53,114.114.114.114:53
 
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/reject-drop.list,REJECT-DROP,extended-matching,pre-matching
+RULE-SET,https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Ruleset/reject-drop.list,REJECT-DROP,extended-matching,pre-matching
 
-RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/reject.list,REJECT-NO-DROP,extended-matching,pre-matching
+RULE-SET,https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Ruleset/reject.list,REJECT-NO-DROP,extended-matching,pre-matching
 
-RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/proxy.list,Proxy,extended-matching
+RULE-SET,https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Ruleset/proxy.list,Proxy,extended-matching
 
-RULE-SET,https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Ruleset/direct.list,Direct,extended-matching
+RULE-SET,https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Ruleset/direct.list,Direct,extended-matching
   
 
 #DOMAIN-SUFFIX,dler.cloud, Auto - UrlTest

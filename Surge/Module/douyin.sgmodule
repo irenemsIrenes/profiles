@@ -17,7 +17,7 @@ URL-REGEX,^https?:\/\/x?log.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.
 ^https?:\/\/api.*\.amemv\.com\/aweme\/v\d\/feed https://aweme.snssdk.com/aweme/v1/feed header
 
 [Script]
-douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]\/(feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\?,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/douyin.js
+douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]\/(feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\?,requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Quantumult/X/js/douyin.js
 
 [MITM]
 hostname = %APPEND% *.amemv.com, *.snssdk.com, *.tiktokv.com, *.musical.ly

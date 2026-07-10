@@ -81,42 +81,42 @@ URL-REGEX,^https:\/\/ip\.taobao\.com\/service\/getIpInfo\.php,REJECT
 
 [Map Local]
 # umeng
-^https:\/\/errlog\.umeng\.com\/apm_logs data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/umeng-apm_logs.json"
+^https:\/\/errlog\.umeng\.com\/apm_logs data="https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/mock/umeng-apm_logs.json"
 
-^https:\/\/errlog\.umeng\.com\/upload data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/umeng-upload.txt"
+^https:\/\/errlog\.umeng\.com\/upload data="https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/mock/umeng-upload.txt"
 
-^https:\/\/errlog\.umeng\.com\/api\/ data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/umeng-api.txt"
+^https:\/\/errlog\.umeng\.com\/api\/ data="https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/mock/umeng-api.txt"
 
 # tophub.app/stat
-^https:\/\/api\d*\.tophub\.app\/stat data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/tophub-app-stat.json"
+^https:\/\/api\d*\.tophub\.app\/stat data="https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/mock/tophub-app-stat.json"
 
 # toutiao
-^https:\/\/m\.toutiao\.com\/log\/event data="https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/mock/toutiao-log-event.json"
+^https:\/\/m\.toutiao\.com\/log\/event data="https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/mock/toutiao-log-event.json"
 
 [Header Rewrite]
 
 
 [Script]
 
-xigua = type=http-response,pattern=^https:\/\/.*\.(snssdk\.com|amemv\.com|ixigua\.com)\/video\/app\/stream\/,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/xigua.js
+xigua = type=http-response,pattern=^https:\/\/.*\.(snssdk\.com|amemv\.com|ixigua\.com)\/video\/app\/stream\/,requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Quantumult/X/js/xigua.js
 
-peopleapp = type=http-response,pattern=^https:\/\/app\.peopleapp\.com\/Api\/\d+\/HomeApi\/getContentList,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/people-news.js
+peopleapp = type=http-response,pattern=^https:\/\/app\.peopleapp\.com\/Api\/\d+\/HomeApi\/getContentList,requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Quantumult/X/js/people-news.js
 
-#weibomobile = type=http-response,pattern=^https:\/\/m\.weibo\.cn\/api\/container\/getIndex,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/weibo-mobile.js
+#weibomobile = type=http-response,pattern=^https:\/\/m\.weibo\.cn\/api\/container\/getIndex,requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Quantumult/X/js/weibo-mobile.js
 
-maimai = type=http-response,pattern=^https:\/\/open\.taou\.com\/maimai\/feed\/v\d+\/(focus_feed|nd\d+feed),requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Quantumult/X/js/maimai.js
+maimai = type=http-response,pattern=^https:\/\/open\.taou\.com\/maimai\/feed\/v\d+\/(focus_feed|nd\d+feed),requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Quantumult/X/js/maimai.js
 
-tieba1 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/f\/getFrsData,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/tieba-getFrsData.js
+tieba1 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/f\/getFrsData,requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/tieba-getFrsData.js
 
-tieba2 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/p\/getPbData,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/tieba-getPbData.js
+tieba2 = type=http-response,pattern=^https:\/\/tieba\.baidu\.com\/mg\/p\/getPbData,requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/tieba-getPbData.js
 
-zhidao1 = type=http-response,pattern=^https:\/\/zhidao\.baidu\.com\/mobile\/ajax\/getqbcontent,requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/zhidao-getqbcontent.js
+zhidao1 = type=http-response,pattern=^https:\/\/zhidao\.baidu\.com\/mobile\/ajax\/getqbcontent,requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/zhidao-getqbcontent.js
 
-wnl-feed-ads = type=http-response,pattern=^https:\/\/adn\.51wnl-cq\.com\/AdApi\/GetFeedAds(?:\?|$),requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/wnl-feed-ads.js
+wnl-feed-ads = type=http-response,pattern=^https:\/\/adn\.51wnl-cq\.com\/AdApi\/GetFeedAds(?:\?|$),requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/wnl-feed-ads.js
 
-cainiao-flyad = type=http-response,pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad\/\d+\.\d+(?:\?|$),requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/cainiao-flyad.js
+cainiao-flyad = type=http-response,pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad\/\d+\.\d+(?:\?|$),requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/cainiao-flyad.js
 
-cainiao-ads-batch-show = type=http-response,pattern=^https:\/\/netflow-mtop\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.batch\.show\/\d+\.\d+(?:\?|$),requires-body=1,script-path=https://raw.githubusercontent.com/irenemsIrenes/profiles/master/Surge/Scripts/cainiao-ads-batch-show.js
+cainiao-ads-batch-show = type=http-response,pattern=^https:\/\/netflow-mtop\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.batch\.show\/\d+\.\d+(?:\?|$),requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/cainiao-ads-batch-show.js
 
 [MITM]
 hostname = %APPEND% m.toutiao.com, sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.sina.cn,*.sohu.com,cdn.web.chelaileapp.cn,zhidao.baidu.com,improving.duckduckgo.com,at*.doubanio.com,adn.51wnl-cq.com,guide-acs.m.taobao.com,netflow-mtop.cainiao.com
