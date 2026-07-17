@@ -114,9 +114,15 @@ zhidao1 = type=http-response,pattern=^https:\/\/zhidao\.baidu\.com\/mobile\/ajax
 
 wnl-feed-ads = type=http-response,pattern=^https:\/\/adn\.51wnl-cq\.com\/AdApi\/GetFeedAds(?:\?|$),requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/wnl-feed-ads.js
 
+wnl-card-home = type=http-response,pattern=^https:\/\/r\.51wnl-cq\.com\/api\/CardHome\/GetCardHome(?:Items)?(?:\?|$),requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/wnl-card-home.js
+
+wnl-coin-missions = type=http-response,pattern=^https:\/\/r\.51wnl-cq\.com\/api\/Coin_Activity\/GetMissions(?:\?|$),requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/wnl-coin-missions.js
+
+wnl-configs = type=http-response,pattern=^https:\/\/configsys\.51wnl-cq\.com\/api\/Config\/GetConfigs(?:\?|$),requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/wnl-configs.js
+
 cainiao-flyad = type=http-response,pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad\/\d+\.\d+(?:\?|$),requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/cainiao-flyad.js
 
 cainiao-ads-batch-show = type=http-response,pattern=^https:\/\/netflow-mtop\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.batch\.show\/\d+\.\d+(?:\?|$),requires-body=1,script-path=https://cdn.jsdelivr.net/gh/irenemsIrenes/profiles@master/Surge/Scripts/cainiao-ads-batch-show.js
 
 [MITM]
-hostname = %APPEND% m.toutiao.com, sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.sina.cn,*.sohu.com,cdn.web.chelaileapp.cn,zhidao.baidu.com,improving.duckduckgo.com,at*.doubanio.com,adn.51wnl-cq.com,guide-acs.m.taobao.com,netflow-mtop.cainiao.com
+hostname = %APPEND% m.toutiao.com, sf*-scmcdn-tos.pstatp.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,app.hui724.com,acs.m.taobao.com,*.taou.com,*.hupu.com,*.hoopchina.com.cn,api.gaoqingdianshi.com,*.ixigua.com,*.peopleapp.com,*.xinhuazhiyun.com,*.alicdn.com,*.aixifan.com, m.weibo.cn, *.peopleapp.com, analytics-api*.smzdm.com, *.umeng.com, tieba.baidu.com,*.sogou.com,api*.tophub.app, *.sina.cn,*.sohu.com,cdn.web.chelaileapp.cn,zhidao.baidu.com,improving.duckduckgo.com,at*.doubanio.com,adn.51wnl-cq.com,r.51wnl-cq.com,configsys.51wnl-cq.com,guide-acs.m.taobao.com,netflow-mtop.cainiao.com
