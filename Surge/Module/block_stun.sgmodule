@@ -1,6 +1,5 @@
 #!name=Block STUN
 #!desc=Disable detected STUN traffic
-#!system=ios
 #!category=Veda
 
 [Rule]
