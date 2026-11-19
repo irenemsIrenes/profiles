@@ -36,6 +36,7 @@ DOMAIN,anthropic-com.ghost.io
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,statsigapi.net
 DOMAIN,browser-intake-us5-datadoghq.com
+DOMAIN-WILDCARD,http-intake.logs.us*.datadoghq.com
 DOMAIN-KEYWORD,datadog
 DOMAIN-KEYWORD,sift
 
